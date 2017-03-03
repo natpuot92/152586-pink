@@ -12,15 +12,15 @@
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">гамбургер</button>
             <ul class="main-nav__items">
-              <li class="main-nav-item  main-nav__item--active">Главная</li>
-              <li class="main-nav-item">Фотографии</li>
-              <li class="main-nav-item">Конкурс</li>
-              <li class="main-nav-item">HTML Academy</li>
+              <li class="main-nav__item  main-nav__item--active">Главная</li>
+              <li class="main-nav__item">Фотографии</li>
+              <li class="main-nav__item">Конкурс</li>
+              <li class="main-nav__item">HTML Academy</li>
             </ul>
         </nav>
       </header>
       <div class="product">
-        <div class="product__btn-wrapper">
+        <div class="product__btn-container">
           <a class="btn btn--product" href="#">Скачать приложение</a>
         </div>
         <div class="product__items-wrapper">
@@ -65,28 +65,87 @@
               </p>
           </div>
         </div>
-        <div class="advantages__phone-wrapper">
-          <div class="advantages__phone">
+        <div class="advantages__phone">
+          <div class="advantages__phone-wrapper">
           </div>
         </div>
        </div>
-       <div class="sliders-wrapper">
+       <div class="sliders">
+          <input class="comments__input" type="radio" name="comment-1" id="comment-1" checked>
+          <input class="comments__input" type="radio" name="comment-2" id="comment-2">
+          <input class="comments__input" type="radio" name="comment-3" id="comment-3">
           <div class="comments slider">
-             <div class="comments-title">
+             <div class="comments__title">
                 Николай Петров
              </div>
-             <input class="comments__input" type="radio" name="comment-1" id="comment-1" checked>
-             <input class="comments__input" type="radio" name="comment-2" id="comment-2">
-             <input class="comments__input" type="radio" name="comment-3" id="comment-3">
              <div class="comments__text">
                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
              </div>
              <div class="comments__toogles">
-               <label class="slider__toggle" for="comment-1">1</label>
+               <label class="slider__toggle slider__toggle--active" for="comment-1">1</label>
                <label class="slider__toggle" for="comment-2">2</label>
                <label class="slider__toggle" for="comment-3">3</label>
              </div>
            </div>
+           <input class="pay-plans__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
+           <input class="pay-plans__input" type="radio" name="pay-plan-2" id="pay-plans-2">
+           <input class="pay-plans__input" type="radio" name="pay-plan-3" id="pay-plans-3">
+           <div class="pay-plans">
+             <div class="pay-plan">
+               <div class="pay-plan__title">
+                 <div class="pay-plan__title-name">
+                   Стандарт
+                 </div>
+                 <div class="pay-plan__title-price">
+                   3,99 USD
+                 </div>
+                 <span class="pay-plan__hit hit"></span>
+               </div>
+               <div class="pay-plan__options">
+                 <div class="pay-plan__pink-filter"></div>
+                 <div class="pay-plan__smile"></div>
+                 <div class="pay-plan__comments"></div>
+               </div>
+               <div class="pay-plan__toogles">
+               <label class="slider__toggle" for="pay-plan-1">1</label>
+               <label class="slider__toggle slider__toggle--active" for="pay-plan-2">2</label>
+               <label class="slider__toggle" for="pay-plan-3">3</label>
+             </div>
+             </div>
+           </div>
+           <footer class="page-footer">
+             <div class="page-footer__wrapper">
+               <div class="page-footer__question">
+                 Остались вопросы?
+                 Свяжитесь с нами!
+               </div>
+               <div class="page-footer__tel">
+                 <div class="page-footer__tel-title">
+                   Звоните:
+                 </div>
+                 <a href="tel:+78125556666"></a>
+               </div>
+               <div class="page-footer__container-mail">
+                 <div class="page-footer__mail-title">
+                   Пишите:
+                 </div>
+                 <div class="page-footer__mail">
+                   mail@htmlacademy.ru
+                 </div>
+               </div>
+               <div class="page-footer__container-addres">
+                 <div class="page-footer__addres-title">
+                   Приезжайте в гости:
+                 </div>
+                 <div class="page-footer__addres">
+                   ул. Большая Конюшенная, 19/8
+                 </div>
+               </div>
+               <div class="page-footer__map">
+                 карта
+               </div>
+             </div>
+           </footer>
         </div>
     </body>
 </html>
