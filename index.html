@@ -22,12 +22,13 @@
             </ul>
         </nav>
       </header>
+      <main>
       <div class="product">
         <a class="btn btn--product" href="#">Скачать приложение</a>
         <div class="product__items-container">
-          <div class="product__items-apple"></div>
-          <div class="product__items-android"></div>
-          <div class="product__items-windows"></div>
+          <span class="product__items-apple"></span>
+          <span class="product__items-android"></span>
+          <span class="product__items-windows"></span>
         </div>
           <p class="product__items-text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -35,10 +36,10 @@
       </div>
       <div class="advantages">
         <div class="advantages__slogan">
-         <div class="advantages__question">Устали от серости мегаполиса?
-         </div>
-         <div class="advantages__result">Нам есть, что вам предложить!
-         </div>
+         <p class="advantages__question">Устали от серости мегаполиса?
+         </p>
+         <p class="advantages__result">Нам есть, что вам предложить!
+         </p>
         </div>
         <div class="advantages__items">
           <div class="advantages__item">
@@ -69,16 +70,16 @@
           <input class="comments__input" type="radio" name="comment-1" id="comment-1" checked>
           <input class="comments__input" type="radio" name="comment-2" id="comment-2">
           <input class="comments__input" type="radio" name="comment-3" id="comment-3">
-          <div class="comments slider">
+          <div class="slider-comments__container">
             <div class="comments__container slide-1">
-             <div class="comments__title">
+             <span class="comments__title">
                 Николай Петров
-             </div>
+             </span>
              <p class="comments__text">
                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
              </p>
             </div>
-              <div class="comments__container slide-2">
+            <div class="comments__container slide-2">
              <div class="comments__title">
                 Имя
              </div>
@@ -95,78 +96,87 @@
              </p>
             </div>
              <div class="comments__toogles">
-               <label class="slider__toggle slider__toggle--active" for="comment-1">1</label>
-               <label class="slider__toggle" for="comment-2">2</label>
-               <label class="slider__toggle" for="comment-3">3</label>
+               <label class="slider-toggle slider-toggle--active" for="comment-1">1</label>
+               <label class="slider-toggle" for="comment-2">2</label>
+               <label class="slider-toggle" for="comment-3">3</label>
              </div>
            </div>
         </div>
-        <div class="slider-pay-plans">
-           <input class="pay-plans__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
-           <input class="pay-plans__input" type="radio" name="pay-plan-2" id="pay-plans-2">
-           <input class="pay-plans__input" type="radio" name="pay-plan-3" id="pay-plans-3">
-             <div class="pay-plan">
-              <div class="pay-plan__item">
-               <div class="pay-plan__title">
-                 <div class="pay-plan__title-name">
+        <div class="slider-pay-plan">
+           <input class="slider-pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
+           <input class="slider-pay-plan__input" type="radio" name="pay-plan-2" id="pay-plans-2">
+           <input class="slider-pay-plan__input" type="radio" name="pay-plan-3" id="pay-plans-3">
+             <div class="slider-pay-plan__container">
+              <div class="slider-pay-plan__item">
+               <div class="slider-pay-plan__title">
+                 <div class="slider-pay-plan__title-name">
                    Стандарт
                  </div>
-                 <div class="pay-plan__title-price">
+                 <div class="slider-pay-plan__title-price">
                    3,99 USD
                  </div>
-                 <span class="pay-plan__hit"></span>
+                 <span class="slider-pay-plan__hit"></span>
                </div>
-               <div class="pay-plan__options">
-                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span>
+               <div class="slider-pay-plan__options">
+                 <div class="slider-pay-plan__pink-filter">Розовый фильтр <span class="slider-pay-plan-checked"></span>
                  </div>
-                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span>
+                 <div class="slider-pay-plan__smile">Смайлики
+                 <span class="slider-pay-plan-checked"></span>
                  </div>
-                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span>
+                 <div class="slider-pay-plan__comments">Комментарии
+                 <span class="slider-pay-plan-not-checked"></span>
                  </div>
                </div>
               </div>
-              <div class="pay-plan__item">
-               <div class="pay-plan__title">
-                 <div class="pay-plan__title-name">
+              <div class="slider-pay-plan__item">
+               <div class="slider-pay-plan__title">
+                 <div class="slider-pay-plan__title-name">
                   название тарифа
                  </div>
-                 <div class="pay-plan__title-price">
+                 <div class="slider-pay-plan__title-price">
                    цена
                  </div>
-                 <span class="pay-plan__hit hit"></span>
                </div>
-               <div class="pay-plan__options">
-                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span></div>
+               <div class="slider-pay-plan__options">
+                 <div class="slider-pay-plan__pink-filter">Розовый фильтр   <span class="slider-pay-plan-checked"></span>
+                 </div>
+                 <div class="slider-pay-plan__smile">Смайлики
+                   <span class="slider-pay-plan-checked"></span>
+                 </div>
+                 <div class="slider-pay-plan__comments">Комментарии
+                  <span class="slider-pay-plan-checked"></span>
+                 </div>
                </div>
               </div>
-              <div class="pay-plan__item">
-               <div class="pay-plan__title">
-                 <div class="pay-plan__title-name">
+              <div class="slider-pay-plan__item">
+               <div class="slider-pay-plan__title">
+                 <div class="slider-pay-plan__title-name">
                   название тарифа
                  </div>
-                 <div class="pay-plan__title-price">
+                 <div class="slider-pay-plan__title-price">
                   цена
                  </div>
-                 <span class="pay-plan__hit"></span>
+                 <span class="slider-pay-plan__hit"></span>
                </div>
-               <div class="pay-plan__options">
-                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span>
+               <div class="slider-pay-plan__options">
+                 <div class="slider-pay-plan__pink-filter">Розовый фильтр <span class="slider-pay-plan__pink-filter-checkbox"></span>
                  </div>
-                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span>
+                 <div class="slider-pay-plan__smile">Смайлики
+                 <span class="slider-pay-plan-checked"></span>
                  </div>
-                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span>
+                 <div class="slider-pay-plan__comments">Комментарии
+                 <span class="slider-pay-plan-checked"></span>
                  </div>
                </div>
               </div>
-             <div class="pay-plan__toogles">
-               <label class="slider__toggle" for="pay-plans-1">1</label>
-               <label class="slider__toggle slider__toggle--active" for="pay-plans-2">2</label>
-               <label class="slider__toggle" for="pay-plans-3">3</label>
+             <div class="slider-pay-plan__toogles">
+               <label class="slider-toggle" for="pay-plans-1">1</label>
+               <label class="slider-toggle slider-toggle--active" for="pay-plans-2">2</label>
+               <label class="slider-toggle" for="pay-plans-3">3</label>
              </div>
            </div>
          </div>
+        </main>
            <footer class="page-footer">
              <div class="page-footer__question">
                  Остались вопросы?
