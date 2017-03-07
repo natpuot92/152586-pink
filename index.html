@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header class="page-header">
@@ -30,9 +31,9 @@
           <div class="product__items-windows"></div>
         </div>
         <div class="product__items-text-wrapper">
-          <div class="product__items-text">
+          <p class="product__items-text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </div>
+          </p>
         </div>
       </div>
       <div class="advantages">
@@ -58,7 +59,7 @@
               </p>
           </div>
           <div class="advantages__item">
-            <b class="advantages__item-titl">
+            <b class="advantages__item-title">
               Заводит новых друзей
             </b>
               <p class="advantages__item-text">
@@ -66,12 +67,9 @@
               </p>
           </div>
         </div>
-        <div class="advantages__phone">
-          <div class="advantages__phone-wrapper">
-          </div>
-        </div>
+
        </div>
-       <div class="sliders">
+       <div class="slider-comments">
           <input class="comments__input" type="radio" name="comment-1" id="comment-1" checked>
           <input class="comments__input" type="radio" name="comment-2" id="comment-2">
           <input class="comments__input" type="radio" name="comment-3" id="comment-3">
@@ -106,12 +104,13 @@
                <label class="slider__toggle" for="comment-3">3</label>
              </div>
            </div>
+        </div>
+          <div class="slider-pay-plans">
            <input class="pay-plans__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
            <input class="pay-plans__input" type="radio" name="pay-plan-2" id="pay-plans-2">
            <input class="pay-plans__input" type="radio" name="pay-plan-3" id="pay-plans-3">
            <div class="pay-plans">
-             <div class="pay-plan">
-              <div class="pay-plan__1">
+             <div class="pay-plan__item">
                <div class="pay-plan__title">
                  <div class="pay-plan__title-name">
                    Стандарт
@@ -119,7 +118,7 @@
                  <div class="pay-plan__title-price">
                    3,99 USD
                  </div>
-                 <span class="pay-plan__hit hit"></span>
+                 <span class="pay-plan__hit"></span>
                </div>
                <div class="pay-plan__options">
                  <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span></div>
@@ -127,7 +126,7 @@
                  <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span></div>
                </div>
               </div>
-              <div class="pay-plan__2">
+              <div class="pay-plan__item">
                <div class="pay-plan__title">
                  <div class="pay-plan__title-name">
                   название тарифа
@@ -143,7 +142,7 @@
                  <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span></div>
                </div>
               </div>
-              <div class="pay-plan__3">
+              <div class="pay-plan__item">
                <div class="pay-plan__title">
                  <div class="pay-plan__title-name">
                   название тарифа
@@ -151,7 +150,7 @@
                  <div class="pay-plan__title-price">
                   цена
                  </div>
-                 <span class="pay-plan__hit hit"></span>
+                 <span class="pay-plan__hit"></span>
                </div>
                <div class="pay-plan__options">
                  <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span></div>
@@ -164,11 +163,9 @@
                <label class="slider__toggle slider__toggle--active" for="pay-plan-2">2</label>
                <label class="slider__toggle" for="pay-plan-3">3</label>
              </div>
-             </div>
-           </div>
+            </div>
            <footer class="page-footer">
-             <div class="page-footer__wrapper">
-               <div class="page-footer__question">
+              <div class="page-footer__question">
                  Остались вопросы?
                  Свяжитесь с нами!
                </div>
@@ -197,8 +194,7 @@
                <div class="page-footer__map">
                  карта
                </div>
-             </div>
-           </footer>
+          </footer>
         </div>
     </body>
 </html>
