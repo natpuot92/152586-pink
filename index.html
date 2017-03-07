@@ -8,10 +8,12 @@
   <body>
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="http://placehold.it/123x76" alt="логотип">
+          <a href="index.html"><img src="http://placehold.it/123x76" alt="логотип">
+          </a>
         </div>
         <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">гамбургер</button>
+          <button class="main-nav__toggle" type="button">гамбургер
+          </button>
             <ul class="main-nav__items">
               <li class="main-nav__item  main-nav__item--active">Главная</li>
               <li class="main-nav__item">Фотографии</li>
@@ -19,22 +21,17 @@
               <li class="main-nav__item">HTML Academy</li>
             </ul>
         </nav>
-
       </header>
       <div class="product">
-        <div class="product__btn-container">
-          <a class="btn btn--product" href="#">Скачать приложение</a>
-        </div>
-        <div class="product__items-wrapper">
+        <a class="btn btn--product" href="#">Скачать приложение</a>
+        <div class="product__items-container">
           <div class="product__items-apple"></div>
           <div class="product__items-android"></div>
           <div class="product__items-windows"></div>
         </div>
-        <div class="product__items-text-wrapper">
           <p class="product__items-text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
-        </div>
       </div>
       <div class="advantages">
         <div class="advantages__slogan">
@@ -67,8 +64,7 @@
               </p>
           </div>
         </div>
-
-       </div>
+      </div>
        <div class="slider-comments">
           <input class="comments__input" type="radio" name="comment-1" id="comment-1" checked>
           <input class="comments__input" type="radio" name="comment-2" id="comment-2">
@@ -78,25 +74,25 @@
              <div class="comments__title">
                 Николай Петров
              </div>
-             <div class="comments__text">
+             <p class="comments__text">
                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-             </div>
+             </p>
             </div>
               <div class="comments__container slide-2">
              <div class="comments__title">
                 Имя
              </div>
-             <div class="comments__text">
+             <p class="comments__text">
               Описание
-             </div>
+             </p>
             </div>
               <div class="comments__container slide-3">
              <div class="comments__title">
                 Имя
              </div>
-             <div class="comments__text">
+             <p class="comments__text">
                Описание
-             </div>
+             </p>
             </div>
              <div class="comments__toogles">
                <label class="slider__toggle slider__toggle--active" for="comment-1">1</label>
@@ -105,12 +101,12 @@
              </div>
            </div>
         </div>
-          <div class="slider-pay-plans">
+        <div class="slider-pay-plans">
            <input class="pay-plans__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
            <input class="pay-plans__input" type="radio" name="pay-plan-2" id="pay-plans-2">
            <input class="pay-plans__input" type="radio" name="pay-plan-3" id="pay-plans-3">
-           <div class="pay-plans">
-             <div class="pay-plan__item">
+             <div class="pay-plan">
+              <div class="pay-plan__item">
                <div class="pay-plan__title">
                  <div class="pay-plan__title-name">
                    Стандарт
@@ -121,9 +117,12 @@
                  <span class="pay-plan__hit"></span>
                </div>
                <div class="pay-plan__options">
-                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span></div>
+                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
+                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
+                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
                </div>
               </div>
               <div class="pay-plan__item">
@@ -153,19 +152,23 @@
                  <span class="pay-plan__hit"></span>
                </div>
                <div class="pay-plan__options">
-                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span></div>
-                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span></div>
+                 <div class="pay-plan__pink-filter">Розовый фильтр <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
+                 <div class="pay-plan__smile">Смайлики <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
+                 <div class="pay-plan__comments">Комментарии <span class="pay-plan__pink-filter-checkbox"></span>
+                 </div>
                </div>
               </div>
              <div class="pay-plan__toogles">
-               <label class="slider__toggle" for="pay-plan-1">1</label>
-               <label class="slider__toggle slider__toggle--active" for="pay-plan-2">2</label>
-               <label class="slider__toggle" for="pay-plan-3">3</label>
+               <label class="slider__toggle" for="pay-plans-1">1</label>
+               <label class="slider__toggle slider__toggle--active" for="pay-plans-2">2</label>
+               <label class="slider__toggle" for="pay-plans-3">3</label>
              </div>
-            </div>
+           </div>
+         </div>
            <footer class="page-footer">
-              <div class="page-footer__question">
+             <div class="page-footer__question">
                  Остались вопросы?
                  Свяжитесь с нами!
                </div>
@@ -195,6 +198,5 @@
                  карта
                </div>
           </footer>
-        </div>
-    </body>
+   </body>
 </html>
