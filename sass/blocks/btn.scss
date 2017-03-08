@@ -1,3 +1,12 @@
-body {
-  background: red;
+.btn {
+  display: block;
+  width: 280px;
+  height: 55px;
+  font-family: $font;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
 }
+

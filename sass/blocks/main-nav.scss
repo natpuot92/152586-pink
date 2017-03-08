@@ -1,3 +1,24 @@
-body {
-  background: red;
+.main-nav {
+  background: #283645;
+}
+
+.main-nav__items {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__item a {
+  display: block;
+  min-height: 62px;
+  font-family: $font;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid #010101;
+  border-top: 1px solid #485461;
 }

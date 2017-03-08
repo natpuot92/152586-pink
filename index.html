@@ -4,31 +4,38 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/opensans.woff">
+    <link rel="stylesheet" href="fonts/opensansbold.woff">
+    <link rel="stylesheet" href="fonts/opensanslight.woff">
   </head>
-  <body>
+  <body class="body">
       <header class="page-header">
-        <div class="page-header__logo">
-          <a href="index.html"><img src="http://placehold.it/123x76" alt="логотип">
-          </a>
-        </div>
         <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">гамбургер
-          </button>
-            <ul class="main-nav__items">
-              <li class="main-nav__item  main-nav__item--active">Главная</li>
-              <li class="main-nav__item">Фотографии</li>
-              <li class="main-nav__item">Конкурс</li>
-              <li class="main-nav__item">HTML Academy</li>
-            </ul>
-        </nav>
+         <div class="page-header__logo">
+           <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="логотип">
+           </a>
+           <button class="page-header__toggle" type="button">гамбургер
+           </button>
+         </div>
+           <ul class="main-nav__items">
+             <li class="main-nav__item  main-nav__item--active">
+             <a href="index.html">Главная </a></li>
+             <li class="main-nav__item">
+             <a href="foto.html">Фотографии</a></li>
+             <li class="main-nav__item">
+             <a href="form.html">Конкурс</a></li>
+             <li class="main-nav__item">
+             <a href="">HTML Academy</a></li>
+           </ul>
+         </nav>
       </header>
       <main>
       <div class="product">
         <a class="btn btn--product" href="#">Скачать приложение</a>
         <div class="product__items-container">
-          <span class="product__items-apple"></span>
-          <span class="product__items-android"></span>
-          <span class="product__items-windows"></span>
+          <span class="product__items product__items--apple"></span>
+          <span class="product__items product__items--android"></span>
+          <span class="product__items product__items--windows"></span>
         </div>
           <p class="product__items-text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
