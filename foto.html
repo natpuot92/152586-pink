@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-       <header class="page-header">
+        <header class="page-header-item">
         <nav class="main-nav main-nav--closed">
-         <div class="page-header__logo">
-           <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="логотип">
+           <a class="main-nav__logo" href="index.html">
+             <button class="main-nav__btn" type="button">гамбургер
+             </button>
            </a>
-           <button class="page-header__toggle" type="button">гамбургер
-           </button>
-         </div>
            <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
@@ -21,12 +19,16 @@
              <a href="foto.html">Фотографии</a></li>
              <li class="main-nav__item">
              <a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item">
+             <li class="main-nav__item">
              <a href="">HTML Academy</a></li>
            </ul>
-         </nav>
+       </nav>
+       <div class="page-header-item__desc">
+         Фотографии
+         пользователей
+       </div>
       </header>
-    <main>
+    <main class="page-main">
      <section class="news">
      <div class="news__title">
            Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?
@@ -34,7 +36,7 @@
       <div class="news-item">
         <div class="news-item__foto news-item__foto--panorama">
           <a class="news-item__foto-link news-item__foto-link--panorama" href="#">
-          <img src="http://placehold.it/320x137" width="320" height="137"  alt="панорама дня">
+          <img src="/img/panorama-mobile@1x.jpg" width="320" height="137"  alt="панорама дня">
           </a>
           <div class="news-item__foto-day">
                панорама дня
@@ -57,7 +59,7 @@
       <div class="news-item">
         <div class="news-item__foto">
           <a class="news-item__foto-link" href="#">
-           <img src="http://placehold.it/280x180" width="280" height="180" alt="машина">
+           <img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt="машина">
           </a>
         </div>
       <div class="news-item__comment">
@@ -77,7 +79,7 @@
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="baraban">
+         <img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt="baraban">
          </a>
        </div>
        <div class="news-item__comment">
@@ -97,7 +99,7 @@
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-          <img src="http://placehold.it/280x180" width="280" height="180" alt="окна">
+          <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="окна">
          </a>
        </div>
        <div class="news-item__comment">
@@ -117,7 +119,7 @@
       <div class="news-item">
         <div class="news-item__foto">
           <a class="news-item__foto-link" href="#">
-           <img src="http://placehold.it/280x180" width="280" height="180" alt="кубанская бахча">
+           <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="кубанская бахча">
           </a>
         </div>
         <div class="news-item__comment">
@@ -137,7 +139,7 @@
       <div class="news-item">
         <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="горы">
+         <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="горы">
           </a>
         </div>
        <div class="news-item__comment">
@@ -155,7 +157,7 @@
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="вид с самолета">
+         <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="вид с самолета">
          </a>
        </div>
        <div class="news-item__comment">
@@ -174,11 +176,11 @@
         Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       </div>
    </section>
-   <sectionn class="foto-options">
+   <section class="foto-options">
      <div class="foto-options__container">
        <div class="foto-options__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x374" width="280" height="374" alt="фото">
+         <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="фото">
          </a>
        </div>
          <div class="foto-options__items">
@@ -193,12 +195,12 @@
            <div class="foto-options__scale"></div>
            <div class="foto-options__toggle"></div>
          </div>
-      </div>
       <div class="foto-options__btns">
         <button class="btn foto-options__btn--post">Запостить</button>
         <button class="btn foto-options__btn--break">Отмена</button>
       </div>
-   </sectionn>
+      </div>
+   </section>
   </main>
    <footer class="page-footer">
      <div class="page-footer__logo logo-glass">

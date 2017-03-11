@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-   <header class="page-header">
+     <header class="page-header-item">
         <nav class="main-nav main-nav--closed">
-         <div class="page-header__logo">
-           <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="логотип">
+           <a class="main-nav__logo" href="index.html">
+             <button class="main-nav__btn" type="button">гамбургер
+             </button>
            </a>
-           <button class="page-header__toggle" type="button">гамбургер
-           </button>
-         </div>
            <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
@@ -25,8 +23,11 @@
              <a href="">HTML Academy</a></li>
            </ul>
          </nav>
+         <div class="page-header-item__desc">
+         Конкурс на самое безбашенное путешествие с Пинк
+       </div>
       </header>
-      <main>
+    <main class="page-main page-main--foto">
        <p class="form-special">
            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
        </p>

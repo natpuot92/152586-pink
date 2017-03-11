@@ -1,11 +1,19 @@
 .main-nav {
-  background: #283645;
+  position: relative;
+}
+
+.main-nav__logo {
+  display: flex;
+  min-height: 66px;
+  background: rgba(29, 38, 50, 0.3);
 }
 
 .main-nav__items {
   display: none;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  background: #283645;
 }
 
 .main-nav__item {
