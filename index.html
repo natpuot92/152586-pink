@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/opensans.woff">
@@ -10,8 +12,9 @@
   </head>
   <body class="body">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed">
-           <a class="main-nav__logo" href="index.html">
+        <div class="page-header__container">
+         <nav class="main-nav main-nav--closed">
+          <a class="main-nav__logo" href="index.html">
              <button class="main-nav__btn" type="button">гамбургер
              </button>
            </a>
@@ -27,9 +30,8 @@
            </ul>
          </nav>
          <img class="page-header__iphone" src="/img/iphone-hand-mobile@1x.png" alt="iphone">
-      </header>
-      <main class="page-main">
-      <div class="product">
+       </div>
+       <div class="product">
         <a class="btn btn--product" href="#">Скачать приложение</a>
         <div class="product__items-container">
           <span class="product__items product__items--apple"></span>
@@ -40,6 +42,8 @@
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
       </div>
+       </header>
+      <main class="page-main">
       <div class="advantages">
         <div class="advantages__slogan">
          <p class="advantages__question">Устали от серости мегаполиса?

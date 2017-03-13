@@ -30,3 +30,9 @@
   border-bottom: 1px solid #010101;
   border-top: 1px solid #485461;
 }
+
+@media (min-width: 768px) {
+    .main-nav__logo {
+        min-height: 110px;
+    }
+}

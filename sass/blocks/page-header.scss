@@ -1,18 +1,16 @@
 .page-header {
+  width: 320px;
+  min-height: 461px;
+  margin: 0 auto;
+}
+
+.page-header__container {
   position: relative;
   width: 320px;
   min-height: 461px;
   margin: 0 auto;
   background: url("/img/bg-back-mobile@1x.jpg") no-repeat center;
 }
-
-.page-header-item {
-  position: relative;
-  width: 320px;
-  min-height: 237px;
-  margin: 0 auto;
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat center;
- }
 
 .page-header__iphone {
     position: absolute;
@@ -35,4 +33,26 @@
   font-family: $font;
   font-weight: lighter;
   color: white;
+}
+
+@media (min-width: 768px) {
+    .page-header {
+     width: 700px;
+     min-height: 729px;
+     margin: 0 auto;
+     padding: 0 40px;  
+}    
+    
+    .page-header__container {
+    position: relative;
+    width: 700px;
+    min-height: 729px;
+    margin: 0 auto;
+    background: url
+  }
+    .page-header__iphone {
+    left: 150px;
+    height: 545px;
+    width: 470px;
+    }
 }
