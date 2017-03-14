@@ -1,0 +1,24 @@
+.slider-toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  margin-right: 19px;
+  font-size: 0;
+  background: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#comment-1:checked ~ .slider-comments__container label[for="comment-1"],
+#comment-2:checked ~ .slider-comments__container label[for="comment-2"],
+#comment-3:checked ~ .slider-comments__container label[for="comment-3"]{
+  background: white;
+  border: 3px solid #364351;
+}
+
+#comment-1:checked ~ .slider-comments__container .slide-1,
+#comment-2:checked ~ .slider-comments__container .slide-2,
+#comment-3:checked ~ .slider-comments__container .slide-3,{
+  display: block;
+}

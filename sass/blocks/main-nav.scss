@@ -1,3 +1,38 @@
-body {
-  background: red;
+.main-nav {
+  position: relative;
+}
+
+.main-nav__logo {
+  display: flex;
+  min-height: 66px;
+  background: rgba(29, 38, 50, 0.3);
+}
+
+.main-nav__items {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: #283645;
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__item a {
+  display: block;
+  min-height: 62px;
+  font-family: $font;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid #010101;
+  border-top: 1px solid #485461;
+}
+
+@media (min-width: 768px) {
+    .main-nav__logo {
+        min-height: 110px;
+    }
 }

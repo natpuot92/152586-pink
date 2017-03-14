@@ -1,3 +1,34 @@
-body {
-  background: blue;
-}
+@import "normalize.scss";
+@import "variables.scss";
+
+@import "blocks/body";
+@import "blocks/page-header";
+@import "blocks/advantages";
+@import "blocks/btn";
+@import "blocks/comments";
+@import "blocks/form";
+@import "blocks/form-btn";
+@import "blocks/form-contacts";
+@import "blocks/form-crazy";
+@import "blocks/form-desc";
+@import "blocks/form-emotions";
+@import "blocks/form-os";
+@import "blocks/form-special";
+@import "blocks/foto-options";
+@import "blocks/htmlacademy-logo";
+@import "blocks/main-nav";
+@import "blocks/modal-content-error";
+@import "blocks/modal-content-sent";
+@import "blocks/news";
+@import "blocks/news-item";
+@import "blocks/page-footer";
+@import "blocks/product";
+@import "blocks/slider-comments";
+@import "blocks/slider-pay-plan";
+@import "blocks/slider-pay-plan-checked";
+@import "blocks/slider-pay-plan-not-checked";
+@import "blocks/social-link";
+@import "blocks/social-links";
+@import "blocks/page-main";
+@import "blocks/slider-toggle";
+

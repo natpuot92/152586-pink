@@ -1,3 +1,28 @@
-body {
-  background: red;
+.product {
+  width: 320px;
+  min-height: 271px;
+  margin: 0 auto;
+  background: #1d2631;
+}
+
+.product__items {
+  display: block;
+  height: 56px;
+  width: 48px;
+  &--apple {
+    background: url("/img/logo-apple.svg") no-repeat center;
+  }
+  &--android {
+    background: url("/img/logo-android.svg") no-repeat center;
+  }
+  &--windows {
+    background: url("/img/logo-microsoft.svg") no-repeat center;
+  }
+}
+.product__items-text {
+  color: white;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
