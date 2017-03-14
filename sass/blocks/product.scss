@@ -19,10 +19,21 @@
     background: url("/img/logo-microsoft.svg") no-repeat center;
   }
 }
+
+.product__slogan {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
 .product__items-text {
   color: white;
   line-height: 24px;
   font-size: 14px;
   margin: 0;
   padding: 0;
+}
+
+@media {
+
 }
