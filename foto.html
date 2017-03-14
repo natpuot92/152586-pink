@@ -2,37 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-      <header class="page-header">
-        <div class="page-header__logo">
-         <a href="index.html">
-         <img src="http://placehold.it/123x76" alt="логотип">
-         </a>
-        </div>
+  <body class="body">
+        <header class="page-header-item">
         <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">гамбургер
-          </button>
-            <ul class="main-nav__items">
-              <li class="main-nav__item  main-nav__item--active">Главная</li>
-              <li class="main-nav__item">Фотографии</li>
-              <li class="main-nav__item">Конкурс</li>
-              <li class="main-nav__item">HTML Academy</li>
-            </ul>
-         </nav>
-         <div class="page-header__title-foto">
-          Фотографии пользователей
-         </div>
+           <a class="main-nav__logo" href="index.html">
+             <button class="main-nav__btn" type="button">гамбургер
+             </button>
+           </a>
+           <ul class="main-nav__items">
+             <li class="main-nav__item  main-nav__item--active">
+             <a href="index.html">Главная </a></li>
+             <li class="main-nav__item">
+             <a href="foto.html">Фотографии</a></li>
+             <li class="main-nav__item">
+             <a href="form.html">Конкурс</a></li>
+             <li class="main-nav__item">
+             <a href="">HTML Academy</a></li>
+           </ul>
+       </nav>
+       <div class="page-header-item__desc">
+         Фотографии
+         пользователей
+       </div>
       </header>
-   <section class="news">
+    <main class="page-main">
+     <section class="news">
      <div class="news__title">
            Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?
      </div>
       <div class="news-item">
         <div class="news-item__foto news-item__foto--panorama">
           <a class="news-item__foto-link news-item__foto-link--panorama" href="#">
-          <img src="http://placehold.it/320x137" width="320" height="137"  alt="панорама дня">
+          <img src="/img/panorama-mobile@1x.jpg" width="320" height="137"  alt="панорама дня">
           </a>
           <div class="news-item__foto-day">
                панорама дня
@@ -40,7 +46,7 @@
        </div>
        <div class="news-item__comment">
          <div class="news-item__comment-name">
-               Анна <span class="news-item__comment-name-time"> (5 минут назад)</span>
+               Анна <span class="news-item__comment-time"> (5 минут назад)</span>
          </div>
          <div class="news-item__comment-desc">
            <p>
@@ -48,19 +54,19 @@
            </p>
          </div>
          <div class="news-item__comment-like">
-           <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">215</span>
+           <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">215</span>
          </div>
        </div>
       </div>
       <div class="news-item">
         <div class="news-item__foto">
           <a class="news-item__foto-link" href="#">
-           <img src="http://placehold.it/280x180" width="280" height="180" alt="машина">
+           <img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt="машина">
           </a>
         </div>
       <div class="news-item__comment">
         <div class="news-item__comment-name">
-           Левон <span class="news-item__comment-name-time"> (5 часов назад)</span>
+           Левон <span class="news-item__comment-time"> (5 часов назад)</span>
         </div>
           <div class="news-item__comment-desc">
              <p>
@@ -68,19 +74,19 @@
             </p>
            </div>
           <div class="news-item__comment-like">
-            <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">356</span>
+            <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">356</span>
            </div>
        </div>
       </div>
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="baraban">
+         <img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt="baraban">
          </a>
        </div>
        <div class="news-item__comment">
          <div class="news-item__comment-name">
-           Антон <span class="news-item__comment-name-time"> (12 часов назад)</span>
+           Антон <span class="news-item__comment-time"> (12 часов назад)</span>
          </div>
          <div class="news-item__comment-desc">
            <p>
@@ -88,19 +94,19 @@
            </p>
          </div>
          <div class="news-item__comment-like">
-           <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">666</span>
+           <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">666</span>
          </div>
        </div>
       </div>
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-          <img src="http://placehold.it/280x180" width="280" height="180" alt="окна">
+          <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="окна">
          </a>
        </div>
        <div class="news-item__comment">
          <div class="news-item__comment-name">
-            Борис <span class="news-item__comment-name-time"> (20 часов назад)</span>
+            Борис <span class="news-item__comment-time"> (20 часов назад)</span>
          </div>
            <div class="news-item__comment-desc">
               <p>
@@ -108,19 +114,19 @@
              </p>
            </div>
            <div class="news-item__comment-like">
-             <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">215</span>
+             <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">215</span>
            </div>
         </div>
       </div>
       <div class="news-item">
         <div class="news-item__foto">
           <a class="news-item__foto-link" href="#">
-           <img src="http://placehold.it/280x180" width="280" height="180" alt="кубанская бахча">
+           <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="кубанская бахча">
           </a>
         </div>
         <div class="news-item__comment">
           <div class="news-item__comment-name">
-             Сергей <span class="news-item__comment-name-time"> (25 часов назад)</span>
+             Сергей <span class="news-item__comment-time"> (25 часов назад)</span>
           </div>
           <div class="news-item__comment-desc">
             <p>
@@ -128,43 +134,43 @@
             </p>
           </div>
           <div class="news-item__comment-like">
-            <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">4</span>
+            <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">4</span>
           </div>
         </div>
       </div>
       <div class="news-item">
         <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="горы">
+         <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="горы">
           </a>
         </div>
        <div class="news-item__comment">
          <div class="news-item__comment-name">
-            Максим <span class="news-item__comment-name-time"> (40 часов назад)</span>
+            Максим <span class="news-item__comment-time"> (40 часов назад)</span>
          </div>
          <div class="news-item__comment-desc">
            Где снег-то?
          </div>
            <div class="news-item__comment-like">
-             <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">150</span>
+             <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">150</span>
            </div>
        </div>
       </div>
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x180" width="280" height="180" alt="вид с самолета">
+         <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="вид с самолета">
          </a>
        </div>
        <div class="news-item__comment">
          <div class="news-item__comment-name">
-             Надежда <span class="news-item__comment-name-time"> (40 часов назад)</span>
+             Надежда <span class="news-item__comment-time"> (40 часов назад)</span>
          </div>
          <div class="news-item__comment-desc">
              Всем GM и взаимные лайки!
          </div>
            <div class="news-item__comment-like">
-             <span class="news-item__comment-like heart">heart</span>нравится: <span class="foto__comment-like-sum">2560</span>
+             <span class="news-item__comment-like">heart</span>нравится: <span class="foto__comment-like-sum">2560</span>
            </div>
        </div>
       </div>
@@ -172,11 +178,11 @@
         Затмите их всех! Выкладывайте все, что накопилось в телефоне!
       </div>
    </section>
-   <sectionn class="foto-options">
+   <section class="foto-options">
      <div class="foto-options__container">
        <div class="foto-options__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="http://placehold.it/280x374" width="280" height="374" alt="фото">
+         <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="фото">
          </a>
        </div>
          <div class="foto-options__items">
@@ -191,14 +197,15 @@
            <div class="foto-options__scale"></div>
            <div class="foto-options__toggle"></div>
          </div>
-      </div>
       <div class="foto-options__btns">
         <button class="btn foto-options__btn--post">Запостить</button>
         <button class="btn foto-options__btn--break">Отмена</button>
       </div>
-   </sectionn>
+      </div>
+   </section>
+  </main>
    <footer class="page-footer">
-     <div class="page-footer__logo logo-glass">
+     <div class="page-footer__logo">
         <a href="index.html">
          <div class="page-footer__logo-glass">
            <img src="#" alt="очки">

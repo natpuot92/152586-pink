@@ -1,0 +1,30 @@
+.advantages {
+  min-height: 1000px;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  font-family: $font;
+  background: #f2f2f2;
+}
+
+.advantages__slogan {
+  background: white;
+  min-height: 248px;
+  font-size: 24px;
+  font-weight:  lighter;
+}
+
+.advantages__question {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item-titl {
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.advantages__item-text {
+  font-size: 14px;
+  line-height: 24px;
+}

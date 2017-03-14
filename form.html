@@ -2,31 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/123x76" alt="логотип">
-        </a>
-      </div>
+  <body class="body">
+     <header class="page-header-item">
         <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button">гамбургер</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item  main-nav__item--active">Главная</li>
-            <li class="main-nav__item">Фотографии</li>
-            <li class="main-nav__item">Конкурс</li>
-            <li class="main-nav__item">HTML Academy</li>
-          </ul>
-          <div class="page-header__title-foto">
-            Конкурс на самое безбашенное путешествие с Пинк
-         </div>
-        </nav>
-    </header>
-      <main>
-       <div class="form-special">
-           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+           <a class="main-nav__logo" href="index.html">
+             <button class="main-nav__btn" type="button">гамбургер
+             </button>
+           </a>
+           <ul class="main-nav__items">
+             <li class="main-nav__item  main-nav__item--active">
+             <a href="index.html">Главная </a></li>
+             <li class="main-nav__item">
+             <a href="foto.html">Фотографии</a></li>
+             <li class="main-nav__item">
+             <a href="form.html">Конкурс</a></li>
+             <li class="main-nav__item">
+             <a href="">HTML Academy</a></li>
+           </ul>
+         </nav>
+         <div class="page-header-item__desc">
+         Конкурс на самое безбашенное путешествие с Пинк
        </div>
+      </header>
+    <main class="page-main page-main--foto">
+       <p class="form-special">
+           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+       </p>
          <form class="form" action="/echo" method="post">
            <div class="form__fio">
              <div class="form__surname">
@@ -47,37 +53,40 @@
                   Ваши безбашенные достижения в путешествии
                </div>
                  <div class="form-crazy__items">
-                   <div class="form-crazy__item__container">
+                   <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
-                     <input type="checkbox" checked><span class="form-crazy__indicator"></span>
+                     <input type="checkbox" checked>
+                     <span class="form-crazy__indicator"></span>
                       Сделал селфи с акулой
                      </label>
                    </div>
-                   <div class="form-crazy__item__container">
+                   <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
-                     <input type="checkbox" checked><span class="form-crazy__indicator"></span>
+                     <input type="checkbox" checked>
+                     <span class="form-crazy__indicator"></span>
                      Обгорел на пляже
                      </label>
                    </div>
-                   <div class="form-crazy__item__container">
+                   <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
-                     <input type="checkbox"><span class="form-crazy__indicator"></span>
+                     <input type="checkbox">
+                     <span class="form-crazy__indicator"></span>
                      Видел Чака Норриса
                      </label>
                    </div>
-                  <div class="form-crazy__item__container">
+                  <div class="form-crazy__item-container">
                     <label class="form-crazy__item">
                     <input type="checkbox"><span class="form-crazy__indicator"></span>
                     Накупил сувениров
                     </label>
                   </div>
-                  <div class="form-crazy__item__container">
+                  <div class="form-crazy__item-container">
                     <label class="form-crazy__item">
                     <input type="checkbox" checked><span class="form-crazy__indicator"></span>
                     Удержал башню
                     </label>
                   </div>
-                  <div class="form-crazy__item__container">
+                  <div class="form-crazy__item-container">
                     <label class="form-crazy__item">
                     <input type="checkbox"><span class="form-crazy__indicator"></span>
                     Разгромил отель
@@ -95,24 +104,25 @@
                      <input type="email" id="e-mail" value="Введите почту *" required>
                 </div>
              </div>
-             <section class="form__os">
-               <div class="form__os-title">
-                 Какой опер...
+             <section class="form-os">
+               <div class="form-os__title">
+                 С каким приложением
+                 путешествовали?
                </div>
-               <div class="form__os-container">
-                 <div class="form__os-ios">
+               <div class="form-os__container">
+                 <div class="form-os__ios">
                    <label for="os-ios">
                    <input type="radio" id="os-ios" name="os" value="ios" checked>
                      Pink для iOS
                    </label>
                  </div>
-                 <div class="form__os-andr">
+                 <div class="form-os__andr">
                    <label for="os-andr">
                    <input type="radio" id="os-andr" name="os" value="andr" checked>
                    Pink на Android
                    </label>
                  </div>
-                 <div class="form__os-windows">
+                 <div class="form-os__windows">
                    <label for="os-windows">
                    <input type="radio" id="os-windows" name="os" value="windows" checked>
                    Windows Phone
@@ -120,11 +130,11 @@
                  </div>
                </div>
             </section>
-            <section class="form__emotions">
-              <div class="form__emotions-title">
+            <section class="form-emotions">
+              <div class="form-emotions__title">
                  Опишите свои эмоции
               </div>
-                <div class="form__emotions-text">
+                <div class="form-emotions__text">
                   <textarea id="emotions-text" name="emotions-text" cols="30" rows="10">
                     Можно прям в красках, не стесняясь в выражениях
                   </textarea>
@@ -141,7 +151,7 @@
         </form>
       </main>
        <footer class="page-footer">
-        <div class="page-footer__logo logo-glass">
+        <div class="page-footer__logo">
           <a href="index.html">
             <div class="page-footer__logo-glass">
               <img src="#" alt="очки">
