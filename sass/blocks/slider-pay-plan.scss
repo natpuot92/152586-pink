@@ -1,13 +1,20 @@
 .slider-pay-plan {
   min-height: 446px;
   width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
   font-family: $font;
   background: #f2f2f2;
 }
 
 .slider-pay-plan__item {
+  display: none;
+  flex-direction: column;
   min-height: 279px;
+}
+
+.slider-pay-plan__input {
+  display: none;
 }
 
 .slider-pay-plan__title {
@@ -26,4 +33,31 @@
   line-height: 30px;
   font-weight: lighter;
   color: white;
+}
+
+#pay-plans-1:checked ~ .slider-pay-plan__container label[for="pay-plans-1"],
+#pay-plans-2:checked ~ .slider-pay-plan__container label[for="pay-plans-2"],
+#pay-plans-3:checked ~ .slider-pay-plan__container label[for="pay-plans-3"]{
+  background: white;
+  border: 3px solid #364351;
+}
+
+#pay-plans-1:checked ~ .slider-pay-plan__container .slide-1,
+#pay-plans-2:checked ~ .slider-pay-plan__container .slide-2,
+#pay-plans-3:checked ~ .slider-pay-plan__container .slide-3,{
+  display: flex;
+}
+
+@media (min-width: 700px) {
+  .slider-pay-plan {
+  width: 700px;
+  padding: 0 40px;
+  }
+
+  .slider-pay-plan__toogles {
+    display: none;
+  }
+  .slider-pay-plan__item {
+    display: flex;
+  }
 }

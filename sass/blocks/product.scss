@@ -34,6 +34,12 @@
   padding: 0;
 }
 
-@media {
+@media (min-width: 700px) {
+  .product {
+    position: absolute;
+    top: 30%;
+    min-height: 402px;
+    background: none;
+  }
 
 }
