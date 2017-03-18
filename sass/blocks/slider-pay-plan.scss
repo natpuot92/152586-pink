@@ -26,6 +26,7 @@
   line-height: 30px;
   font-weight: bold;
   color: white;
+  text-transform: uppercase;
 }
 
 .slider-pay-plan__title-price {
@@ -33,6 +34,10 @@
   line-height: 30px;
   font-weight: lighter;
   color: white;
+}
+
+.slider-pay-plan__options-item {
+  text-transform: uppercase;
 }
 
 #pay-plans-1:checked ~ .slider-pay-plan__container label[for="pay-plans-1"],
