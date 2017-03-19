@@ -7,6 +7,15 @@
   background: #f2f2f2;
 }
 
+.slider-pay-plan__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-pay-plan__options-name-container {
+  display: none;
+}
+
 .slider-pay-plan__item {
   display: none;
   flex-direction: column;
@@ -18,7 +27,38 @@
 }
 
 .slider-pay-plan__title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 98px;
+  padding: 0 20px;
+  padding-top: 17px;
   background: #283645;
+}
+
+.slider-pay-plan__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 72px;
+  height: 73px;
+  padding-left: 14px;
+  padding-top: 20px;
+  background: url("/img/bg-hit.svg");
+  color: white;
+  font-size: 14px;
+}
+
+.slider-pay-plan__options {
+  margin-bottom: 40px;
+}
+
+.slider-pay-plan__options-item {
+  display: flex;
+  padding-left: 22px;
+  align-items: center;
 }
 
 .slider-pay-plan__title-name {
@@ -37,7 +77,34 @@
 }
 
 .slider-pay-plan__options-item {
+  height: 59px;
+  width: 281px;
+  background: #ffffff;
+  font-size: 14px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
   text-transform: uppercase;
+}
+
+.slider-pay-plan__checked {
+  width: 31px;
+  height: 21px;
+  margin-left: auto;
+  margin-right: 17px;
+  background: url("/img/icon-yes.svg") no-repeat center;
+  background-size: cover;
+}
+
+.slider-pay-plan__not-checked {
+  width: 27px;
+  height: 27px;
+  margin-left: auto;
+  margin-right: 19px;
+  background: url("/img/icon-no.svg") no-repeat center;
+}
+
+.slider-pay-plan__toogles {
+  margin: 0 auto;
 }
 
 #pay-plans-1:checked ~ .slider-pay-plan__container label[for="pay-plans-1"],
@@ -55,14 +122,71 @@
 
 @media (min-width: 700px) {
   .slider-pay-plan {
-  width: 700px;
-  padding: 0 40px;
+    width: 700px;
+    padding: 0 40px;
+  }
+
+ .slider-pay-plan__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .slider-pay-plan__toogles {
     display: none;
   }
+
   .slider-pay-plan__item {
     display: flex;
+  }
+
+  .slider-pay-plan__title {
+    width: 154px;
+    min-height: 79px;
+  }
+
+  .slider-pay-plan__title-name {
+    font-size: 16px;
+  }
+
+  .slider-pay-plan__options-item {
+    width: 153px;
+  }
+
+  .slide-2 .slider-pay-plan__options-item {
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+  }
+  .slider-pay-plan__options-item-text {
+    display: none;
+  }
+
+  .slider-pay-plan__options-name-container {
+    margin-top: 79px;
+  }
+
+  .slider-pay-plan__options-name-container {
+  display: block;
+}
+
+  .slider-pay-plan__options-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 59px;
+    width: 153px;
+    padding-left: 17px;
+    font-size: 14px;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-right: none;
+    border-top: none;
+  }
+
+  .slider-pay-plan__hit {
+    width: 61px;
+    height: 61px;
+    padding-left: 5px;
+    background-size: cover;
   }
 }
