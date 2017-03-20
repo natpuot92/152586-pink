@@ -141,8 +141,13 @@
   }
 
   .slider-pay-plan__title {
-    width: 154px;
+    width: 152px;
     min-height: 79px;
+  }
+
+   .slider-pay-plan__title--border {
+    border-right: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
   }
 
   .slider-pay-plan__title-name {

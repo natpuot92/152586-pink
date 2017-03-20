@@ -1,0 +1,39 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  background: white;
+  font-family: $font;
+}
+
+.contacts__question {
+  font-family: $font;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #283645;
+}
+
+.contacts__tel a {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__mail {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__addres {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
