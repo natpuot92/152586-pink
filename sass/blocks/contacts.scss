@@ -37,3 +37,36 @@
   font-size: 24px;
   font-weight: lighter;
 }
+
+@media (min-width: 700px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    padding: 0 40px;
+  }
+
+  .contacts__question {
+    width: 374px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__tel,
+  .contacts__container-mail,
+  .contacts__container-addres  {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__map {
+    height: 380px;
+  }
+}
