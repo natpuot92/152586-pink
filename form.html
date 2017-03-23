@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-     <header class="page-header-item">
-        <nav class="main-nav main-nav--closed">
-           <a class="main-nav__logo" href="index.html">
-             <button class="main-nav__btn" type="button">гамбургер
+     <header class="page-header page-header--item">
+        <div class="page-header__container page-header__container--item">
+         <nav class="main-nav main-nav--closed">
+          <a class="main-nav__logo" href="index.html">
+             <button class="main-nav__btn" type="button">гамбургерec
              </button>
-           </a>
+          </a>
            <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
@@ -27,6 +28,7 @@
          </nav>
          <div class="page-header-item__desc">
          Конкурс на самое безбашенное путешествие с Пинк
+       </div>
        </div>
       </header>
     <main class="page-main page-main--foto">
@@ -52,6 +54,8 @@
                <div class="form-crazy__title">
                   Ваши безбашенные достижения в путешествии
                </div>
+                <fieldset>
+                <legend>Ваши безбашенные достижения в путешествии</legend>
                  <div class="form-crazy__items">
                    <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
@@ -93,8 +97,11 @@
                     </label>
                   </div>
                 </div>
+               </fieldset>
              </section>
              <div class="form-contacts">
+              <fieldset>
+              <legend>Контактная информация</legend>
                <div class="form-contacts__tel-container">
                  <label for="tel-namber">Номер телефона</label>
                    <input type="tel" id="tel-namber" value="Номер, пожалуйста">
@@ -103,6 +110,7 @@
                    <label for="e-mail">Адрес почты</label>
                      <input type="email" id="e-mail" value="Введите почту *" required>
                 </div>
+              </fieldset>
              </div>
              <section class="form-os">
                <div class="form-os__title">
@@ -110,6 +118,8 @@
                  путешествовали?
                </div>
                <div class="form-os__container">
+                <fieldset>
+                <legend>С каким приложением путешествовали?</legend>
                  <div class="form-os__ios">
                    <label for="os-ios">
                    <input type="radio" id="os-ios" name="os" value="ios" checked>
@@ -128,6 +138,7 @@
                    Windows Phone
                    </label>
                  </div>
+                </fieldset>
                </div>
             </section>
             <section class="form-emotions">
@@ -135,30 +146,32 @@
                  Опишите свои эмоции
               </div>
                 <div class="form-emotions__text">
+                 <fieldset>
+                 <legend>Опишите свои эмоции</legend>
                   <textarea id="emotions-text" name="emotions-text" cols="30" rows="10">
                     Можно прям в красках, не стесняясь в выражениях
                   </textarea>
+                  </fieldset>
                 </div>
-             <div class="form__send">
-               <button class="form-btn">
-                  Отправить форму
-               </button>
-             </div>
+              </section>
+               <div class="form__send-container">
+                <div class="form__send">
+                  <button class="form-btn">
+                     Отправить форму
+                  </button>
+                </div>
              <div class="form-desc">
                 *-обязательные поля
              </div>
-            </section>
+             </div>
         </form>
       </main>
-       <footer class="page-footer">
+       <footer class="page-footer page-footer--item">
         <div class="page-footer__logo">
           <a href="index.html">
-            <div class="page-footer__logo-glass">
-              <img src="#" alt="очки">
-            </div>
-            <div class="page-footer__logo-logo">
-              <img src="#" alt="logo">
-            </div>
+          <div class="page-footer__logo-logo">
+             <img src="#" width="147" height="40" alt="logo">
+         </div>
           </a>
          </div>
         <div class="page-footer__social">
@@ -168,9 +181,9 @@
             <li class="social-link social-link--vid" ></li>
           </ul>
         </div>
-       <div class="page-footer__copyright">
-         Разработано <span class="htmlacademy-logo"></span>
-       </div>
+       <a href="#" class="page-footer__copyright">
+       Разработано <span class="htmlacademy-logo"></span>
+       </a>
       </footer>
       <div class="modal-content-sent">
         <div class="modal-content-sent__title">

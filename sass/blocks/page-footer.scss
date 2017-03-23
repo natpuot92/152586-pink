@@ -1,3 +1,36 @@
 .page-footer {
   display: none;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 284px;
+  &--item {
+    display: block;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  width: 147px;
+  margin: 0 auto;
+}
+
+.social-links {
+  width: 178px;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .page-footer {
+    display: flex;
+    width: 700px;
+    padding: 0 40px;
+    background: grey;
+  }
 }

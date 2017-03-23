@@ -1,3 +1,12 @@
+.form fieldset,
+.form legend {
+    border: none;
+}
+
+.form__fio {
+  min-height: 368px;
+}
+
 .form__surname {
   font-size: 14px;
   color: #d22856;
@@ -15,6 +24,3 @@
   color: #d22856;
   text-transform: uppercase;
 }
-
-
-
