@@ -12,3 +12,22 @@
   line-height: 30px;
 }
 
+@media (min-width: 700px) {
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+    padding: 0 40px;
+  }
+
+  .news__title {
+  width: 700px;
+  min-height: 230px;
+  padding: 0 40px;
+  }
+
+  .news__footer {
+    min-height: 196px;
+  }
+}

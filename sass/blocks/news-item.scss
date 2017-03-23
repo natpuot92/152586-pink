@@ -19,3 +19,26 @@
   font-weight: bold;
 }
 
+@media (min-width: 700px) {
+  .news-item {
+  width: 300px;
+  }
+
+  .news-item-panorama {
+    width: 620px;
+  }
+
+  .news-item__foto--panorama {
+    width: 700px;
+    min-height: 510px;
+    margin: 0 auto;
+    margin-left: -40px;
+    background: red;
+  }
+
+  .news-item__comment--panarama {
+    width: 620px;
+  }
+
+}
+

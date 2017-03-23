@@ -4,12 +4,20 @@
   margin: 0 auto;
 }
 
+.page-header--item {
+  min-height: 237px;
+}
+
 .page-header__container {
   position: relative;
   width: 320px;
   min-height: 461px;
   margin: 0 auto;
   background: url("/img/bg-back-mobile@1x.jpg") no-repeat center;
+}
+
+.page-header__container--item {
+  min-height: 237px;
 }
 
 .page-header__iphone {
@@ -40,13 +48,17 @@
      width: 700px;
      min-height: 729px;
      margin: 0 auto;
-     padding: 0 40px;
+
 }
+
+    .page-header--item {
+    min-height: 440px;
+  }
 
     .page-header__container {
     position: relative;
     width: 700px;
-    min-height: 729px;
+    min-height: 440px;
     margin: 0 auto;
     background-size: cover;
   }
