@@ -8,3 +8,9 @@
   color: #d22856;
   text-transform: uppercase;
 }
+
+@media (min-width: 700px) {
+  .form-contacts {
+  @include tablet-container;
+  }
+}

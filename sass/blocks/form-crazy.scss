@@ -13,3 +13,9 @@
   color: #d22856;
   text-transform: uppercase;
 }
+
+@media (min-width: 700px) {
+  .form-crazy__container {
+    @include tablet-container;
+  }
+}

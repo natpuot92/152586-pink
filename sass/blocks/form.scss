@@ -36,3 +36,14 @@
 .form__send-container {
   @include phone-container;
 }
+
+@media (min-width:700px) {
+  .form__fio {
+  @include tablet-container;
+  }
+
+  .form__send-container {
+  @include tablet-container;
+}
+
+}

@@ -12,3 +12,9 @@
 .form-emotions__text {
   min-height: 320px;
 }
+
+@media (min-width: 700px) {
+  .form-emotions {
+  @include tablet-container;
+}
+}

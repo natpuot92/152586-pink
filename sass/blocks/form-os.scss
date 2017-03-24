@@ -16,3 +16,9 @@
 .form__send-container {
   min-height: 160px;
 }
+
+@media (min-width: 700px) {
+  .form-os__container {
+  @include tablet-container;
+}
+}
