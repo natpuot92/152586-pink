@@ -1,4 +1,6 @@
 .form-special {
+  display: block;
+  @include phone-container;
   min-height: 160px;
   font-size: 14px;
 

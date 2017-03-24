@@ -1,3 +1,7 @@
+.form-contacts {
+  @include phone-container;
+}
+
 .form-contacts__tel-container {
   font-size: 14px;
   line-height: 30px;

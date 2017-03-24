@@ -3,6 +3,10 @@
   background: #f2f2f2;
 }
 
+.form-crazy__container {
+  @include phone-container;
+}
+
 .form-crazy__title {
   font-size: 14px;
   line-height: 18px;

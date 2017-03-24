@@ -1,6 +1,6 @@
 .form fieldset,
 .form legend {
-
+  border: none;
 }
 
 .form legend   {
@@ -12,6 +12,7 @@
 
 .form__fio {
   min-height: 368px;
+  @include phone-container;
 }
 
 .form__surname {
@@ -30,4 +31,8 @@
   font-size: 14px;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.form__send-container {
+  @include phone-container;
 }
