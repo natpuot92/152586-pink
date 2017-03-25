@@ -18,7 +18,27 @@
 }
 
 @media (min-width: 700px) {
+  .form-os {
+    order: 1;
+  }
+
   .form-os__container {
   @include tablet-container;
+    min-height: 310px;
 }
+
+  .form-os__legend {
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .form-os__fieldset {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-os__container {
+    @include desktop-container;
+  }
 }

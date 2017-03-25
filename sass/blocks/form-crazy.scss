@@ -15,7 +15,26 @@
 }
 
 @media (min-width: 700px) {
+  .form-crazy {
+    order: 3;
+  }
+
   .form-crazy__container {
     @include tablet-container;
+  }
+
+  .form-crazy__legend {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .form-crazy__fieldset {
+    min-height: 552px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-crazy__container {
+    @include desktop-container;
   }
 }

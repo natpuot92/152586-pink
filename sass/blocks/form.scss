@@ -38,21 +38,32 @@
 }
 
 @media (min-width:700px) {
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
   .form__fio {
-  @include tablet-container;
+    @include tablet-container;
   }
 
   .form__send-container {
-  @include tablet-container;
+    order: 5;
+    @include tablet-container;
   }
   .form fieldset {
-   border: 2px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
   }
   .form legend {
-    padding:
     line-height: 30px;
     color: #d22856;
   }
 }
 
+@media (min-width: 1200px) {
+  .form__fio {
+    @include desktop-container;
+  }
+}
 

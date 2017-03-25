@@ -10,3 +10,9 @@
   @include tablet-container;
     }
 }
+
+@media (min-width: 1200px) {
+  .form-special {
+  @include desktop-container;
+  }
+}

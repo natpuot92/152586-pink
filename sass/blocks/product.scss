@@ -1,8 +1,13 @@
 .product {
-  width: 320px;
   min-height: 271px;
   margin: 0 auto;
   background: #1d2631;
+}
+
+.product-container {
+  @include phone-container;
+  min-height: 271px;
+
 }
 
 .product__items {

@@ -2,16 +2,20 @@
   position: relative;
 }
 
+.main-nav__logo-container {
+   background: rgba(17, 24, 30, 0.7);
+}
+
 .main-nav__logo {
+  @include phone-container;
   display: flex;
   min-height: 66px;
-  background: rgba(29, 38, 50, 0.3);
 }
 
 .main-nav__items {
+  @include phone-container;
   display: none;
   flex-direction: column;
-  margin: 0;
   padding: 0;
   background: #283645;
 }
@@ -32,7 +36,17 @@
 }
 
 @media (min-width: 700px) {
-    .main-nav__logo {
-        min-height: 110px;
-    }
+  .main-nav__logo {
+    min-height: 110px;
+  }
+
+  .main-nav__logo {
+    @include tablet-container;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__logo {
+    @include desktop-container;
+  }
 }

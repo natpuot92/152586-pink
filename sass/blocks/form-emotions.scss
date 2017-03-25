@@ -13,8 +13,33 @@
   min-height: 320px;
 }
 
+.form-emotions__textarea {
+  width: 280px;
+  min-height: 200px;
+  font-family: $font;
+  font-size: 18px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+}
+
 @media (min-width: 700px) {
   .form-emotions {
+    order: 4;
   @include tablet-container;
 }
+
+  .form-emotions__legend {
+    margin: 0 auto;
+    padding: 0 38px;
+  }
+
+  .form-emotions__fieldset {
+    min-height: 292px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-emotions {
+    @include desktop-container;
+  }
 }

@@ -9,3 +9,9 @@
   padding: 0 40px;
   margin: 0 auto;
 }
+
+@mixin desktop-container {
+  width: 1200px;
+  padding: 0 130px;
+  margin: 0 auto;
+}

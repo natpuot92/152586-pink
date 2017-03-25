@@ -11,6 +11,24 @@
 
 @media (min-width: 700px) {
   .form-contacts {
-  @include tablet-container;
+    order: 2;
+    @include tablet-container;
+    min-height: 320px;
+   }
+
+  .form-contacts__legend {
+    margin: 0 auto;
+    padding: 0 32px;
   }
+
+  .form-contacts__fieldset {
+    min-height: 310px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-contacts {
+    @include desktop-container;
+  }
+
 }

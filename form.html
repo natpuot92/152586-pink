@@ -9,13 +9,14 @@
   </head>
   <body class="body">
      <header class="page-header page-header--item">
-        <div class="page-header__container page-header__container--item">
          <nav class="main-nav main-nav--closed">
-          <a class="main-nav__logo" href="index.html">
-             <button class="main-nav__btn" type="button">гамбургерec
-             </button>
-          </a>
-           <ul class="main-nav__items">
+           <div class="main-nav__logo-container">
+              <a class="main-nav__logo" href="index.html">
+                 <button class="main-nav__btn" type="button">гамбургер
+                 </button>
+              </a>
+           </div>
+          <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
              <li class="main-nav__item">
@@ -28,7 +29,6 @@
          </nav>
          <div class="page-header-item__desc">
          Конкурс на самое безбашенное путешествие с Пинк
-       </div>
        </div>
       </header>
     <main class="page-main page-main--foto">
@@ -52,8 +52,8 @@
            </div>
              <section class="form-crazy">
                <div class="form-crazy__container">
-                <fieldset>
-                <legend class="">Ваши безбашенные достижения в путешествии</legend>
+                <fieldset class="form-crazy__fieldset">
+                <legend class="form-crazy__legend">Ваши безбашенные достижения в путешествии</legend>
                  <div class="form-crazy__items">
                    <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
@@ -99,8 +99,8 @@
               </div>
              </section>
              <div class="form-contacts">
-              <fieldset>
-              <legend>Контактная информация</legend>
+              <fieldset class="form-contacts__fieldset">
+              <legend class="form-contacts__legend">Контактная информация</legend>
                <div class="form-contacts__tel-container">
                  <label for="tel-namber">Номер телефона</label>
                    <input type="tel" id="tel-namber" value="Номер, пожалуйста">
@@ -113,8 +113,8 @@
              </div>
              <section class="form-os">
                <div class="form-os__container">
-                <fieldset>
-                <legend>С каким приложением путешествовали?</legend>
+                <fieldset class="form-os__fieldset">
+                <legend class="form-os__legend">С каким приложением путешествовали?</legend>
                  <div class="form-os__ios">
                    <label for="os-ios">
                    <input type="radio" id="os-ios" name="os" value="ios" checked>
@@ -138,10 +138,9 @@
             </section>
             <section class="form-emotions">
                 <div class="form-emotions__text">
-                 <fieldset>
-                 <legend>Опишите свои эмоции</legend>
-                  <textarea id="emotions-text" name="emotions-text" cols="30" rows="10">
-                    Можно прям в красках, не стесняясь в выражениях
+                 <fieldset class="form-emotions__fieldset">
+                 <legend class="form-emotions__legend">Опишите свои эмоции</legend>
+                  <textarea class="form-emotions__textarea" id="emotions-text" name="emotions-text">Можно прям в красках, не стесняясь в выражениях
                   </textarea>
                   </fieldset>
                 </div>

@@ -1,7 +1,7 @@
 .page-header {
-  width: 320px;
-  min-height: 461px;
-  margin: 0 auto;
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 462px;
 }
 
 .page-header--item {
@@ -13,11 +13,17 @@
   width: 320px;
   min-height: 461px;
   margin: 0 auto;
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat center;
+
 }
 
 .page-header__container--item {
   min-height: 237px;
+}
+
+.page-header__iphone-container {
+  position: relative;
+  @include phone-container;
+  min-height: 396px;
 }
 
 .page-header__iphone {
@@ -37,6 +43,7 @@
 }
 
 .page-header-item__desc {
+  @include phone-container;
   font-size: 24px;
   font-family: $font;
   font-weight: lighter;
@@ -44,14 +51,7 @@
 }
 
 @media (min-width: 700px) {
-    .page-header {
-     width: 700px;
-     min-height: 729px;
-     margin: 0 auto;
-
-}
-
-    .page-header--item {
+   .page-header--item {
     min-height: 440px;
   }
 
@@ -60,11 +60,20 @@
     width: 700px;
     min-height: 440px;
     margin: 0 auto;
-    background-size: cover;
-  }
+    }
     .page-header__iphone {
     left: 150px;
     height: 545px;
     width: 470px;
     }
+}
+
+@media (min-width: 1200px) {
+  .page-header--item {
+    min-height: 394px;
+  }
+
+  .page-header__container {
+    @include desktop-container;
+  }
 }
