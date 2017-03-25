@@ -4,8 +4,10 @@
   color: #283645;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .page-main--foto {
-
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop-container;
   }
 }

@@ -17,6 +17,8 @@
 @media (min-width: 700px) {
   .form-crazy {
     order: 3;
+    min-height: 0;
+    background: white;
   }
 
   .form-crazy__container {
@@ -35,6 +37,12 @@
 
 @media (min-width: 1200px) {
   .form-crazy__container {
-    @include desktop-container;
+    width: 940px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-crazy__fieldset {
+    min-height: 232px;
   }
 }

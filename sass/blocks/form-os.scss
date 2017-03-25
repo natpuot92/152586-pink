@@ -20,6 +20,7 @@
 @media (min-width: 700px) {
   .form-os {
     order: 1;
+    background: white;
   }
 
   .form-os__container {
@@ -39,6 +40,8 @@
 
 @media (min-width: 1200px) {
   .form-os__container {
-    @include desktop-container;
+    width: 470px;
+    margin: 0;
+    padding: 0;
   }
 }

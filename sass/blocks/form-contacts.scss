@@ -13,7 +13,7 @@
   .form-contacts {
     order: 2;
     @include tablet-container;
-    min-height: 320px;
+    min-height: 310px;
    }
 
   .form-contacts__legend {
@@ -28,7 +28,13 @@
 
 @media (min-width: 1200px) {
   .form-contacts {
-    @include desktop-container;
+    width: 940px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
   }
 
+   .form-contacts__fieldset {
+    min-height: 162px;
+  }
 }

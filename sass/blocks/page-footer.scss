@@ -34,3 +34,9 @@
     background: grey;
   }
 }
+
+@media (min-width: 1200px) {
+  .page-footer {
+    @include desktop-container;
+  }
+}

@@ -13,6 +13,8 @@
 
 @media (min-width: 1200px) {
   .form-special {
+
   @include desktop-container;
+    width: 940px;
   }
 }
