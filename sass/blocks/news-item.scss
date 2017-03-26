@@ -21,7 +21,8 @@
 
 @media (min-width: 700px) {
   .news-item {
-  width: 300px;
+    min-height: 455px;
+    width: 300px;
   }
 
   .news-item-panorama {
@@ -40,5 +41,34 @@
     width: 620px;
   }
 
+  .news-item__comment {
+    min-height: 155px;
+  }
+
 }
+
+@media (min-width: 1200px) {
+  .news-item-panorama {
+    width: 1200px;
+  }
+
+  .news-item__foto--panorama {
+    width: 1200px;
+    min-height: 506px;
+    margin: 0 auto;
+    margin-left: -130px;
+    background: red;
+  }
+
+  .news-item {
+    min-height: 556px;
+  }
+
+  .news-item__comment--panarama {
+    width: 940px;
+  }
+
+}
+
+
 
