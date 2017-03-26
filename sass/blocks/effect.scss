@@ -1,10 +1,7 @@
 .effect {
   display: none;
-  height: 436px;
-  width: 700px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
+
+  }
 
 .effect__clock {
   width: 300px;
@@ -31,6 +28,25 @@
 
 @media (min-width: 700px) {
   .effect {
+    display: block;
+    overflow: auto;
+  }
+
+  .effect__container {
     display: flex;
+    height: 436px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1200px){
+  .effect {
+  background: #f2f2f2;
+  }
+
+  .effect__container {
+    @include desktop-container;
   }
 }

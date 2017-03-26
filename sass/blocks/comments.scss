@@ -55,5 +55,14 @@
     width: 700px;
     padding: 0 40px;
   }
+}
 
+@media (min-width: 1200px) {
+  .comments {
+    @include desktop-container;
+  }
+
+  .comments__toogles {
+    display: none;
+  }
 }

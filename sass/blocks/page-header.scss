@@ -29,7 +29,7 @@
 
 .page-header__iphone {
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   display: block;
   width: 255px;
   height: 286px;
@@ -52,24 +52,32 @@
 }
 
 @media (min-width: 700px) {
-   .page-header--item {
+  .page-header {
+    min-height: 729px;
+  }
+
+  .page-header--item {
     min-height: 440px;
   }
 
-    .page-header__container {
+  .page-header__iphone-container {
     position: relative;
-    width: 700px;
-    min-height: 440px;
-    margin: 0 auto;
+    height: 619px;
+    @include tablet-container;
     }
-    .page-header__iphone {
+
+  .page-header__iphone {
     left: 150px;
     height: 545px;
-    width: 470px;
-    }
+    width: 468px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .page-header__iphone-container {
+    min-height: 743px;
+  }
+
   .page-header--item {
     min-height: 394px;
   }

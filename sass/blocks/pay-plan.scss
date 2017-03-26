@@ -40,6 +40,10 @@
   border: 2px solid #e5e5e5;
 }
 
+.pay-plan__plans--none {
+  display: none;
+}
+
 .pay-plan__item--tablet {
   display: none;
 }
@@ -62,16 +66,22 @@
     background: #f2f2f2;
    }
 
+  .pay-plan__table {
+    border-collapse: collapse;
+  }
+
   .pay-plan__item {
     width: 152px;
-    height: 45px
-  }
+    height: 45px;
+      &--tablet {
+        display: table-cell;
+        }
+    }
 
   .pay-plan__plans {
     width: 152px;
     height: 79px;
   }
-
 
   .pay-plan__container {
     position: static;
@@ -82,4 +92,15 @@
     transform: none;
 
   }
+
+  .pay-plan__plans--none {
+  display: table-cell;
+  }
 }
+
+@media (min-width: 1200px) {
+  .pay-plan__container {
+    @include desktop-container;
+  }
+}
+

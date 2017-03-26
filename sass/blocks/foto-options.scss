@@ -52,6 +52,7 @@
 @media (min-width: 700px) {
   .foto-options {
     min-height: 511px;
+    @include tablet-container;
   }
 
   .foto-options__container {
@@ -70,4 +71,10 @@
     min-height: 400px;
   }
 
+}
+
+@media (min-width: 1200px) {
+  .foto-options {
+    @include desktop-container;
+  }
 }
