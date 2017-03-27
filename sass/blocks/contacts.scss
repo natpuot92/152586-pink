@@ -1,0 +1,78 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  background: white;
+  font-family: $font;
+}
+
+.contacts__question {
+  font-family: $font;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #283645;
+}
+
+.contacts__tel a {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__mail {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.contacts__addres {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+@media (min-width: 700px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    padding: 0 40px;
+  }
+
+  .contacts__question {
+    width: 374px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__tel,
+  .contacts__container-mail,
+  .contacts__container-addres  {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__map {
+    height: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    @include desktop-container;
+  }
+}

@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-        <header class="page-header-item">
+    <header class="page-header page-header--item">
         <nav class="main-nav main-nav--closed">
-           <a class="main-nav__logo" href="index.html">
-             <button class="main-nav__btn" type="button">гамбургер
-             </button>
-           </a>
+            <div class="main-nav__logo-container">
+              <a class="main-nav__logo" href="index.html">
+                 <button class="main-nav__btn" type="button">гамбургер
+                 </button>
+              </a>
+           </div>
            <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
@@ -24,27 +26,27 @@
              <li class="main-nav__item">
              <a href="">HTML Academy</a></li>
            </ul>
-       </nav>
+         </nav>
        <div class="page-header-item__desc">
          Фотографии
          пользователей
        </div>
-      </header>
+   </header>
     <main class="page-main">
      <section class="news">
      <div class="news__title">
            Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?
      </div>
-      <div class="news-item">
+      <div class="news-item news-item-panorama">
         <div class="news-item__foto news-item__foto--panorama">
           <a class="news-item__foto-link news-item__foto-link--panorama" href="#">
-          <img src="/img/panorama-mobile@1x.jpg" width="320" height="137"  alt="панорама дня">
+          <img src="img/panorama-mobile@1x.jpg" width="320" height="137"  alt="панорама дня">
           </a>
           <div class="news-item__foto-day">
                панорама дня
           </div>
        </div>
-       <div class="news-item__comment">
+       <div class="news-item__comment news-item__comment--panarama">
          <div class="news-item__comment-name">
                Анна <span class="news-item__comment-time"> (5 минут назад)</span>
          </div>
@@ -61,7 +63,7 @@
       <div class="news-item">
         <div class="news-item__foto">
           <a class="news-item__foto-link" href="#">
-           <img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt="машина">
+           <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="машина">
           </a>
         </div>
       <div class="news-item__comment">
@@ -81,7 +83,7 @@
       <div class="news-item">
        <div class="news-item__foto">
          <a class="news-item__foto-link" href="#">
-         <img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt="baraban">
+         <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="baraban">
          </a>
        </div>
        <div class="news-item__comment">
@@ -185,15 +187,24 @@
          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="фото">
          </a>
        </div>
+       <div class="foto-options__container-options">
          <div class="foto-options__items">
-           <div class="foto-options__clip">
+           <div class="foto-options__item foto-options__item--clip">
            </div>
-           <div class="foto-options__filling">
+           <div class="foto-options__item foto-options__item--filling">
            </div>
-           <div class="foto-options__contrast">
+           <div class="foto-options__item foto-options__item--contrast">
            </div>
          </div>
          <div class="foto-options__range-controls">
+           <div class="foto-options__scale"></div>
+           <div class="foto-options__toggle"></div>
+         </div>
+          <div class="foto-options__range-controls">
+           <div class="foto-options__scale"></div>
+           <div class="foto-options__toggle"></div>
+         </div>
+          <div class="foto-options__range-controls">
            <div class="foto-options__scale"></div>
            <div class="foto-options__toggle"></div>
          </div>
@@ -202,16 +213,14 @@
         <button class="btn foto-options__btn--break">Отмена</button>
       </div>
       </div>
+     </div>
    </section>
   </main>
-   <footer class="page-footer">
+   <footer class="page-footer page-footer--item">
      <div class="page-footer__logo">
         <a href="index.html">
-         <div class="page-footer__logo-glass">
-           <img src="#" alt="очки">
-         </div>
-         <div class="page-footer__logo-logo">
-             <img src="#" alt="logo">
+          <div class="page-footer__logo-logo">
+             <img src="#" width="147" height="40" alt="logo">
          </div>
         </a>
      </div>
@@ -222,9 +231,9 @@
          <li class="social-link social-link--vid" ></li>
        </ul>
      </div>
-     <div class="page-footer__copyright">
+     <a href="#" class="page-footer__copyright">
        Разработано <span class="htmlacademy-logo"></span>
-     </div>
+     </a>
   </footer>
  </body>
 </html>

@@ -1,8 +1,13 @@
 .product {
-  width: 320px;
   min-height: 271px;
   margin: 0 auto;
   background: #1d2631;
+}
+
+.product-container {
+  @include phone-container;
+  min-height: 271px;
+
 }
 
 .product__items {
@@ -19,6 +24,13 @@
     background: url("/img/logo-microsoft.svg") no-repeat center;
   }
 }
+
+.product__slogan {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
 .product__items-text {
   color: white;
   line-height: 24px;
@@ -26,3 +38,14 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: 700px) {
+  .product {
+    position: absolute;
+    top: 135px;
+    left: 10%;
+    min-height: 402px;
+    background: none;
+  }
+}
+
