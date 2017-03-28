@@ -45,6 +45,8 @@
 
 .page-header-item__desc {
   @include phone-container;
+  margin-top: 33px;
+  text-align: center;
   font-size: 24px;
   font-family: $font;
   font-weight: lighter;
@@ -71,11 +73,19 @@
     height: 545px;
     width: 468px;
   }
+
+  .page-header-item__desc {
+    width: 520px;
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: lighter;
+  }
 }
 
 @media (min-width: 1200px) {
   .page-header__iphone-container {
     min-height: 743px;
+
   }
 
   .page-header--item {
@@ -84,5 +94,10 @@
 
   .page-header__container {
     @include desktop-container;
+  }
+
+  .page-header-item__desc {
+    width: 800px;
+    margin-top: 70px;
   }
 }
