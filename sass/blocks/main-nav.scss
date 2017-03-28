@@ -1,21 +1,88 @@
 .main-nav {
   position: relative;
+  background: rgba(17, 24, 30, 0.7);
 }
 
 .main-nav__logo-container {
-   background: rgba(17, 24, 30, 0.7);
-}
-
-.main-nav__logo {
-  @include phone-container;
+  position: relative;
   display: flex;
+  @include phone-container;
   min-height: 66px;
 }
 
+.main-nav__logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+  margin-top: 22px;
+  background: url("/img/logo-pink-white-mobile.svg") no-repeat center;
+
+}
+
+.main-nav__btn {
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 21px;
+  right: 0;
+  font-size: 0;
+
+  background: none;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
+
+.main-nav--closed .main-nav__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  width:  50px;
+  background-color: white;
+  box-shadow: 0 10px 0 white,
+              0 20px 0 white;
+
+}
+
+.main-nav--opened .main-nav__btn {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 30px;
+    height: 4px;
+
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+}
+
 .main-nav__items {
+  display: block;
   @include phone-container;
-  display: none;
-  flex-direction: column;
   padding: 0;
   background: #283645;
 }
@@ -25,9 +92,13 @@
 }
 
 .main-nav__item a {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 62px;
+  text-align: center;
   font-family: $font;
+  font-weight: bold;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
