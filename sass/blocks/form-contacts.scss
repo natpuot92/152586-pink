@@ -1,6 +1,40 @@
+.form-contacts {
+  @include phone-container;
+}
+
 .form-contacts__tel-container {
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .form-contacts {
+    order: 2;
+    @include tablet-container;
+    min-height: 310px;
+   }
+
+  .form-contacts__legend {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .form-contacts__fieldset {
+    min-height: 310px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-contacts {
+    width: 940px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+   .form-contacts__fieldset {
+    min-height: 162px;
+  }
 }

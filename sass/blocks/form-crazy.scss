@@ -1,5 +1,10 @@
 .form-crazy {
+  min-height: 604px;
   background: #f2f2f2;
+}
+
+.form-crazy__container {
+  @include phone-container;
 }
 
 .form-crazy__title {
@@ -7,4 +12,37 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .form-crazy {
+    order: 3;
+    min-height: 0;
+    background: white;
+  }
+
+  .form-crazy__container {
+    @include tablet-container;
+  }
+
+  .form-crazy__legend {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .form-crazy__fieldset {
+    min-height: 552px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-crazy__container {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-crazy__fieldset {
+    min-height: 232px;
+  }
 }

@@ -1,8 +1,13 @@
 .page-main--foto {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+@media (min-width: 1200px) {
+  .page-main--foto {
+    display: flex;
+    flex-wrap: wrap;
+    @include desktop-container;
+  }
 }

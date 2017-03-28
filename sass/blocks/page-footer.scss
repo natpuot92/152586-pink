@@ -1,39 +1,44 @@
 .page-footer {
+  display: none;
   width: 320px;
   margin: 0 auto;
-  background: white;
-  font-family: $font;
+  padding: 0 20px;
+  min-height: 284px;
+  &--item {
+    display: block;
+  }
 }
 
-.page-footer__question {
-  font-family: $font;
-  font-size: 24px;
-  font-weight: lighter;
+.page-footer__logo {
+  display: block;
+  width: 147px;
+  margin: 0 auto;
 }
 
-.page-footer__title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #283645;
+.social-links {
+  width: 178px;
+  margin: 0 auto;
 }
 
-.page-footer__tel a {
-  color: #d22856;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: lighter;
+.page-footer__copyright {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
 }
 
-.page-footer__mail {
-  color: #d22856;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: lighter;
+@media (min-width: 700px) {
+  .page-footer {
+    display: flex;
+    width: 700px;
+    min-height: 127px;
+    padding: 0 40px;
+    background: grey;
+  }
 }
 
-.page-footer__addres {
-  color: #d22856;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: lighter;
+@media (min-width: 1200px) {
+  .page-footer {
+    @include desktop-container;
+     min-height: 225px;
+  }
 }

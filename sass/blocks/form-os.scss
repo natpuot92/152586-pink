@@ -2,9 +2,46 @@
   background: #f2f2f2;
 }
 
+.form-os__container {
+  @include phone-container;
+}
+
 .form-os__title {
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.form__send-container {
+  min-height: 160px;
+}
+
+@media (min-width: 700px) {
+  .form-os {
+    order: 1;
+    background: white;
+  }
+
+  .form-os__container {
+  @include tablet-container;
+    min-height: 310px;
+}
+
+  .form-os__legend {
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .form-os__fieldset {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-os__container {
+    width: 470px;
+    margin: 0;
+    padding: 0;
+  }
 }

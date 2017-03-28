@@ -6,18 +6,16 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/opensans.woff">
-    <link rel="stylesheet" href="fonts/opensansbold.woff">
-
   </head>
   <body class="body">
       <header class="page-header">
-        <div class="page-header__container">
          <nav class="main-nav main-nav--closed">
-          <a class="main-nav__logo" href="index.html">
-             <button class="main-nav__btn" type="button">гамбургер
-             </button>
-           </a>
+            <div class="main-nav__logo-container">
+              <a class="main-nav__logo" href="index.html">
+                 <button class="main-nav__btn" type="button">гамбургер
+                 </button>
+              </a>
+           </div>
            <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
              <a href="index.html">Главная </a></li>
@@ -29,19 +27,23 @@
              <a href="">HTML Academy</a></li>
            </ul>
          </nav>
-         <img class="page-header__iphone" src="/img/iphone-hand-mobile@1x.png" alt="iphone">
-       </div>
+          <div class="page-header__iphone-container">
+           <img class="page-header__iphone" src="img/iphone-hand-mobile@1x.png" alt="iphone">
+         </div>
        <div class="product">
-        <a class="btn btn--product" href="#">Скачать приложение</a>
-        <div class="product__items-container">
-          <span class="product__items product__items--apple"></span>
-          <span class="product__items product__items--android"></span>
-          <span class="product__items product__items--windows"></span>
+         <div class="product-container">
+          <span class="product__slogan">Взгляните на жизнь иначе!</span>
+          <a class="btn btn--product" href="#">Скачать приложение</a>
+          <div class="product__items-container">
+            <span class="product__items product__items--apple"></span>
+            <span class="product__items product__items--android"></span>
+            <span class="product__items product__items--windows"></span>
+          </div>
+            <p class="product__items-text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+         </div>
         </div>
-          <p class="product__items-text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-      </div>
        </header>
       <main class="page-main">
       <div class="advantages">
@@ -52,35 +54,59 @@
          </p>
         </div>
         <div class="advantages__items">
-          <div class="advantages__item">
-            <b class="advantages__item-title">Поднимает настроение
-            </b>
+         <div class="advantages__items-container">
+           <div class="advantages__item">
+              <b class="advantages__item-title">Поднимает настроение
+              </b>
               <div class="advantages__item-text">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </div>
-          </div>
-          <div class="advantages__item">
-            <b class="advantages__item-title">Меняет мир вокруг
+                  Приложение позволит вам победить осеннюю   хандру и депрессию буквально в несколько кликов!
+               </div>
+            </div>
+            <div class="advantages__item">
+              <b class="advantages__item-title">Меняет мир вокруг
              </b>
-              <div class="advantages__item-text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </div>
-          </div>
-          <div class="advantages__item">
-            <b class="advantages__item-title">
-              Заводит новых друзей
-            </b>
+             <div class="advantages__item-text">
+              Сделайте снимок и украсьте его смайликом или   текстовой подписью, чтобы усилить эффект
+             </div>
+            </div>
+            <div class="advantages__item">
+              <b class="advantages__item-title">
+                Заводит новых друзей
+              </b>
               <p class="advantages__item-text">
                 Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
               </p>
+            </div>
+            <div class="advantages__mobile-photo advantages__mobile-photo--1">
+            </div>
+            <div class="advantages__mobile-photo advantages__mobile-photo--2">
+            </div>
+            <div class="advantages__mobile-photo advantages__mobile-photo--3">
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="effect">
+         <div class="effect__container">
+          <div class="effect__clock">
+              <img src="" alt="часы">
+          </div>
+           <div class="effect__desc">
+            <b class="effect__title">
+                Эффект<br> на 24 часа!
+            </b>
+            <p class="effect__text">
+                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+           </div>
           </div>
         </div>
-      </div>
-       <div class="slider-comments">
+        <div class="comments">
           <input class="comments__input" type="radio" name="comment" id="comment-1" checked>
           <input class="comments__input" type="radio" name="comment" id="comment-2">
           <input class="comments__input" type="radio" name="comment" id="comment-3">
-          <div class="slider-comments__container">
+          <div class="comments__wrapper">
             <div class="comments__container slide-1">
              <span class="comments__title">
                 Николай Петров
@@ -112,111 +138,110 @@
              </div>
            </div>
         </div>
-        <div class="slider-pay-plan">
-           <input class="slider-pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
-           <input class="slider-pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-2">
-           <input class="slider-pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-3">
-             <div class="slider-pay-plan__container">
-              <div class="slider-pay-plan__item">
-               <div class="slider-pay-plan__title">
-                 <div class="slider-pay-plan__title-name">
-                   Стандарт
-                 </div>
-                 <div class="slider-pay-plan__title-price">
-                   3,99 USD
-                 </div>
-                 <span class="slider-pay-plan__hit"></span>
-               </div>
-               <div class="slider-pay-plan__options">
-                 <div class="slider-pay-plan__pink-filter">Розовый фильтр <span class="slider-pay-plan__checked"></span>
-                 </div>
-                 <div class="slider-pay-plan__smile">Смайлики
-                 <span class="slider-pay-plan__checked"></span>
-                 </div>
-                 <div class="slider-pay-plan__comments">Комментарии
-                 <span class="slider-pay-plan__not-checked"></span>
-                 </div>
-               </div>
-              </div>
-              <div class="slider-pay-plan__item">
-               <div class="slider-pay-plan__title">
-                 <div class="slider-pay-plan__title-name">
-                  название тарифа
-                 </div>
-                 <div class="slider-pay-plan__title-price">
-                   цена
-                 </div>
-               </div>
-               <div class="slider-pay-plan__options">
-                 <div class="slider-pay-plan__pink-filter">Розовый фильтр   <span class="slider-pay-plan-checked"></span>
-                 </div>
-                 <div class="slider-pay-plan__smile">Смайлики
-                   <span class="slider-pay-plan-checked"></span>
-                 </div>
-                 <div class="slider-pay-plan__comments">Комментарии
-                  <span class="slider-pay-plan-checked"></span>
-                 </div>
-               </div>
-              </div>
-              <div class="slider-pay-plan__item">
-               <div class="slider-pay-plan__title">
-                 <div class="slider-pay-plan__title-name">
-                  название тарифа
-                 </div>
-                 <div class="slider-pay-plan__title-price">
-                  цена
-                 </div>
-                 <span class="slider-pay-plan__hit"></span>
-               </div>
-               <div class="slider-pay-plan__options">
-                 <div class="slider-pay-plan__pink-filter">Розовый фильтр <span class="slider-pay-plan__pink-filter-checkbox"></span>
-                 </div>
-                 <div class="slider-pay-plan__smile">Смайлики
-                 <span class="slider-pay-plan-checked"></span>
-                 </div>
-                 <div class="slider-pay-plan__comments">Комментарии
-                 <span class="slider-pay-plan-checked"></span>
-                 </div>
-               </div>
-              </div>
-             <div class="slider-pay-plan__toogles">
+        <div class="pay-plan">
+           <input class="pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-1" checked>
+           <input class="pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-2">
+           <input class="pay-plan__input" type="radio" name="pay-plan-1" id="pay-plans-3">
+             <div class="pay-plan__container">
+                 <table class="pay-plan__table">
+                    <thead class="pay-plan__header">
+                      <tr>
+                        <td class="pay-plan__plans--none">
+                          <p class="pay-plan__title"></p>
+                          <p class="pay-plan__cost"></p>
+                        </td>
+                        <td class="pay-plan__plans">
+                          <p class="pay-plan__title">База</p>
+                          <p class="pay-plan__cost">1,99 USD</p>
+                        </td>
+                        <td class="pay-plan__plans">
+                          <p class="pay-plan__title">Стандарт</p>
+                          <p class="pay-plan__cost">2,99 USD</p>
+                        </td>
+                        <td class="pay-plan__plans">
+                          <p class="pay-plan__title">Анлим</p>
+                          <p class="pay-plan__cost">9,99 USD</p>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td class="pay-plan__item pay-plan__item--tablet">Розовый фильтр</td>
+                      <td class="pay-plan__item pay-plan__item--on">Розовый фильтр</td>
+                      <td class="pay-plan__item pay-plan__item--on">Розовый фильтр</td>
+                      <td class="pay-plan__item pay-plan__item--on">Розовый фильтр</td>
+                    </tr>
+                    <tr>
+                      <td class="pay-plan__item pay-plan__item--tablet">Смайлики</td>
+                      <td class="pay-plan__item pay-plan__item--off">Смайлики</td>
+                      <td class="pay-plan__item pay-plan__item--on">Смайлики</td>
+                      <td class="pay-plan__item pay-plan__item--on">Смайлики</td>
+                    </tr>
+                    <tr>
+                      <td class="pay-plan__item pay-plan__item--tablet">Комментарии</td>
+                      <td class="pay-plan__item pay-plan__item--off">Комментарии</td>
+                      <td class="pay-plan__item pay-plan__item--off">Комментарии</td>
+                      <td class="pay-plan__item pay-plan__item--on">Комментарии</td>
+                    </tr>
+                  </table>
+             <div class="pay-plan__toogles">
                <label class="slider-toggle" for="pay-plans-1">1</label>
                <label class="slider-toggle slider-toggle--active" for="pay-plans-2">2</label>
                <label class="slider-toggle" for="pay-plans-3">3</label>
              </div>
            </div>
          </div>
-        </main>
-           <footer class="page-footer">
-             <div class="page-footer__question">
+           <section class="contacts">
+             <div class="contacts__question">
                  Остались вопросы?
                  Свяжитесь с нами!
+             </div>
+              <div class="contacts__container">
+                 <div class="contacts__tel">
+                   <div class="contacts__title">
+                     Звоните:
+                   </div>
+                   <a href="tel:+78125556666">+7(812)5556666</a>
+                 </div>
+                 <div class="contacts__container-mail">
+                   <div class="contacts__title">
+                     Пишите:
+                   </div>
+                   <div class="contacts__mail">
+                     mail@htmlacademy.ru
+                   </div>
+                 </div>
+                 <div class="contacts__container-addres">
+                   <div class="contacts__title">
+                     Приезжайте в гости:
+                   </div>
+                   <div class="contacts__addres">
+                     ул. Большая Конюшенная, 19/8
+                   </div>
+                 </div>
                </div>
-               <div class="page-footer__tel">
-                 <div class="page-footer__title">
-                   Звоните:
-                 </div>
-                 <a href="tel:+78125556666">+7(812)5556666</a>
-               </div>
-               <div class="page-footer__container-mail">
-                 <div class="page-footer__title">
-                   Пишите:
-                 </div>
-                 <div class="page-footer__mail">
-                   mail@htmlacademy.ru
-                 </div>
-               </div>
-               <div class="page-footer__container-addres">
-                 <div class="page-footer__title">
-                   Приезжайте в гости:
-                 </div>
-                 <div class="page-footer__addres">
-                   ул. Большая Конюшенная, 19/8
-                 </div>
-               </div>
-               <div class="page-footer__map">
+               <div class="contacts__map">
                  карта
                </div>
-          </footer>
-   </body>
+          </section>
+        </main>
+        <footer class="page-footer">
+         <div class="page-footer__logo">
+          <a href="index.html">
+           <div class="page-footer__logo-logo">
+             <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
+           </div>
+          </a>
+       </div>
+       <div class="page-footer__social">
+         <ul class="social-links">
+           <li class="social-link social-link--tw"></li>
+           <li class="social-link social-link--fb"></li>
+           <li class="social-link social-link--vid" ></li>
+         </ul>
+       </div>
+       <a href="#" class="page-footer__copyright">
+       Разработано <span class="htmlacademy-logo"></span>
+       </a>
+    </footer>
+  </body>
 </html>

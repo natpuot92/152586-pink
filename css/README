@@ -17,3 +17,33 @@ sass/
 postcss/
 | - style.css
 | - [другие *.css файлы]
+
+ .slider-pay-plan__container {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .slider-pay-plan__toogles {
+    display: none;
+  }
+
+  .slider-pay-plan__item {
+    display: flex;
+  }
+
+  .slider-pay-plan__title {
+    width: 154px;
+    min-height: 79px;
+  }
+
+  .slider-pay-plan__options {
+
+  }
+
+  .slider-pay-plan__options-item {
+    width: 153px;
+  }
+  .slider-pay-plan__options-item-text {
+    display: none;
+  }
