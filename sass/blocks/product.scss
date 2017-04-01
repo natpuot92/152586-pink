@@ -31,6 +31,10 @@
   font-weight: lighter;
 }
 
+.product__items-container {
+  display: flex;
+}
+
 .product__items-text {
   color: white;
   line-height: 24px;

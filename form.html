@@ -10,6 +10,7 @@
   <body class="body">
      <header class="page-header page-header--item">
          <nav class="main-nav main-nav--closed">
+          <div class="main-nav__wrapper">
            <div class="main-nav__logo-container">
               <a class="main-nav__logo" href="index.html">
                  <button class="main-nav__btn" type="button">гамбургер
@@ -18,7 +19,7 @@
            </div>
           <ul class="main-nav__items">
              <li class="main-nav__item  main-nav__item--active">
-             <a href="index.html">Главная </a></li>
+             <a href="index.html">Главная</a></li>
              <li class="main-nav__item">
              <a href="foto.html">Фотографии</a></li>
              <li class="main-nav__item">
@@ -26,13 +27,14 @@
              <li class="main-nav__item">
              <a href="">HTML Academy</a></li>
            </ul>
+          </div>
          </nav>
          <div class="page-header-item__desc">
          Конкурс на самое безбашенное путешествие с Пинк
        </div>
       </header>
     <main class="page-main page-main--foto">
-       <p class="form-special">
+       <p class="form__special">
            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
        </p>
          <form class="form" action="/echo" method="post">
@@ -50,10 +52,10 @@
                  <input id="patronymic-name" type="text" value="ну и отчество тоже">
                </div>
            </div>
-             <section class="form-crazy">
-               <div class="form-crazy__container">
-                <fieldset class="form-crazy__fieldset">
-                <legend class="form-crazy__legend">Ваши безбашенные достижения в путешествии</legend>
+             <section class="form__crazy">
+               <div class="form__crazy-container">
+                <fieldset class="form__crazy-fieldset">
+                <legend class="form__crazy-legend">Ваши безбашенные достижения в путешествии</legend>
                  <div class="form-crazy__items">
                    <div class="form-crazy__item-container">
                      <label class="form-crazy__item">
@@ -98,37 +100,37 @@
                </fieldset>
               </div>
              </section>
-             <div class="form-contacts">
-              <fieldset class="form-contacts__fieldset">
-              <legend class="form-contacts__legend">Контактная информация</legend>
-               <div class="form-contacts__tel-container">
+             <div class="form__contacts">
+              <fieldset class="form__contacts-fieldset">
+              <legend class="form__contacts-legend">Контактная информация</legend>
+               <div class="form__contacts-tel-container">
                  <label for="tel-namber">Номер телефона</label>
                    <input type="tel" id="tel-namber" value="Номер, пожалуйста">
                </div>
-               <div class="form-contacts__tel-container">
+               <div class="form__contacts-tel-container">
                    <label for="e-mail">Адрес почты</label>
                      <input type="email" id="e-mail" value="Введите почту *" required>
                 </div>
               </fieldset>
              </div>
-             <section class="form-os">
-               <div class="form-os__container">
-                <fieldset class="form-os__fieldset">
-                <legend class="form-os__legend">С каким приложением путешествовали?</legend>
-                 <div class="form-os__ios">
-                   <label for="os-ios">
+             <section class="form__os">
+               <div class="form__os-container">
+                <fieldset class="form__os-fieldset">
+                <legend class="form__os-legend">С каким приложением путешествовали?</legend>
+                 <div class="form__os-ios">
+                   <label for="os__ios">
                    <input type="radio" id="os-ios" name="os" value="ios" checked>
                      Pink для iOS
                    </label>
                  </div>
-                 <div class="form-os__andr">
-                   <label for="os-andr">
+                 <div class="form__os-andr">
+                   <label for="os__andr">
                    <input type="radio" id="os-andr" name="os" value="andr" checked>
                    Pink на Android
                    </label>
                  </div>
-                 <div class="form-os__windows">
-                   <label for="os-windows">
+                 <div class="form__os-windows">
+                   <label for="os__windows">
                    <input type="radio" id="os-windows" name="os" value="windows" checked>
                    Windows Phone
                    </label>
@@ -136,11 +138,11 @@
                 </fieldset>
                </div>
             </section>
-            <section class="form-emotions">
-                <div class="form-emotions__text">
+            <section class="form__emotions">
+                <div class="form__emotions-text">
                  <fieldset class="form-emotions__fieldset">
-                 <legend class="form-emotions__legend">Опишите свои эмоции</legend>
-                  <textarea class="form-emotions__textarea" id="emotions-text" name="emotions-text">Можно прям в красках, не стесняясь в выражениях
+                 <legend class="form__emotions-legend">Опишите свои эмоции</legend>
+                  <textarea class="form__emotions-textarea" id="emotions-text" name="emotions-text">Можно прям в красках, не стесняясь в выражениях
                   </textarea>
                   </fieldset>
                 </div>
