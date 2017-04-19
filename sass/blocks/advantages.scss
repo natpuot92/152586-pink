@@ -10,8 +10,30 @@
 }
 
 .advantages__slogan {
-  @include phone-container;
+  position: relative;
+  min-height: 248px;
+  padding-top: 38px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  background: white;
   overflow: auto;
+
+
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    min-height: 80px;
+    transform: rotate(180deg);
+    background: url('../img/bg-triangle-white.svg') no-repeat top;
+    background-color: white;
+    background-size: 100% auto;
+  }
+
 }
 
 .advantages__items {
@@ -39,13 +61,6 @@
     display: none;
   }
 
-}
-
-.advantages__slogan {
-  min-height: 248px;
-  padding: 0 20px;
-  font-size: 24px;
-  font-weight:  lighter;
 }
 
 .advantages__question {

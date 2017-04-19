@@ -1,13 +1,15 @@
 .product {
   min-height: 271px;
   margin: 0 auto;
+  padding-top: 28px;
   background: #1d2631;
 }
 
 .product-container {
   @include phone-container;
-  min-height: 271px;
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .product__items {
@@ -26,6 +28,7 @@
 }
 
 .product__slogan {
+  display: none;
   color: white;
   font-size: 40px;
   font-weight: lighter;
@@ -33,6 +36,9 @@
 
 .product__items-container {
   display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 25px;
 }
 
 .product__items-text {
@@ -50,6 +56,13 @@
     left: 10%;
     min-height: 402px;
     background: none;
+  }
+
+  .product__slogan {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
