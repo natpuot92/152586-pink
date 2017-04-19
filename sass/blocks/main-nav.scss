@@ -125,10 +125,14 @@
   }
 
   .main-nav__logo {
-    min-height: 23px;
+    min-height: 42px;
     width: 148px;
-    margin-top: 44px;
+    margin-top: 26px;
+    background: url('/img/logo-pink-white-tablet.svg') no-repeat center;
+  }
 
+  .main-nav__logo-container {
+    padding: 0 40px;
   }
 
   .main-nav--opened .main-nav__logo-container {
@@ -150,12 +154,16 @@
 @media (min-width: 1200px) {
  .main-nav__logo-container {
     min-height: 110px;
-   width: 200px;
   }
 
   .main-nav__logo {
-  width: 148px;
-  margin-top: 27px;
+    width: 148px;
+    margin-top: 27px;
+    background: url('/img/logo-pink-white-desktop.svg') no-repeat center;
+  }
+
+  .main-nav__logo-container {
+
   }
 
   .main-nav__btn {
