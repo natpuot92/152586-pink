@@ -17,7 +17,7 @@
   font-size: 24px;
   font-weight: lighter;
   background: white;
-  overflow: auto;
+  overflow: hidden;
 
 
   &:after {
@@ -40,6 +40,7 @@
   background: #f2f2f2;
   min-height: 748px;
   padding: 0 20px;
+  padding-top: 50px;
   overflow: auto;
 }
 
@@ -49,10 +50,15 @@
   min-height: 753px;
 }
 
+.advantages__item {
+  text-align: center;
+}
+
 .advantages__mobile-photo {
   position: absolute;
-  bottom: 0;
-  left: 82px;
+  bottom: -33px;
+  left: 50%;
+  margin-left: -79px;
   width: 158px;
   height: 277px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
@@ -68,12 +74,15 @@
   padding: 0;
 }
 
-.advantages__item-titl {
+.advantages__item-title {
+  display: block;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 10px;
 }
 
 .advantages__item-text {
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -85,6 +94,7 @@
 
   .advantages__slogan {
     @include tablet-container;
+
   }
 
   .advantages__items {

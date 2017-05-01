@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  width: 280px;
+  width: auto;
   height: 55px;
   padding-top: 15px;
   text-align: center;
@@ -14,3 +14,8 @@
   border-radius: 50px;
 }
 
+@media (min-width: 700px) {
+  .btn {
+    width: 300px;
+  }
+}
