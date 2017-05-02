@@ -1,10 +1,27 @@
 .comments {
+  position: relative;
   min-height: 380px;
-  width: 320px;
+  width: auto;
   padding: 0 20px;
   margin: 0 auto;
   background: white;
   font-family: $font;
+
+
+  &:after {
+    content: '';
+    margin-left: -20px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    min-height: 80px;
+    transform: rotate(180deg);
+    background: url('../img/bg-triangle-white.svg') no-repeat top;
+    background-color: white;
+    background-size: 110% auto;
+  }
 }
 
 .comments__wrapper {
@@ -27,7 +44,9 @@
 }
 
 .comments__text {
+  font-family: $font;
   text-align: center;
+  line-height: 30px;
 }
 .comments__input {
   display: none;

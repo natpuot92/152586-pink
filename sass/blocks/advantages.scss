@@ -3,7 +3,7 @@
   display: block;
   min-height: 1000px;
   margin: 0 auto;
-  margin-bottom: 0;
+  margin-bottom: 45px;
   font-family: $font;
   overflow: auto;
 
@@ -31,9 +31,8 @@
     transform: rotate(180deg);
     background: url('../img/bg-triangle-white.svg') no-repeat top;
     background-color: white;
-    background-size: 100% auto;
+    background-size: 110% auto;
   }
-
 }
 
 .advantages__items {
@@ -45,6 +44,9 @@
 }
 
 .advantages__items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   @include phone-container;
   min-height: 753px;
@@ -55,10 +57,10 @@
 }
 
 .advantages__mobile-photo {
-  position: absolute;
-  bottom: -33px;
-  left: 50%;
-  margin-left: -79px;
+  margin: 0 auto;
+  //bottom: -33px;
+  //left: 50%;
+  //margin-left: -79px;
   width: 158px;
   height: 277px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
@@ -76,13 +78,13 @@
 
 .advantages__item-title {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 20px;
 }
 
 .advantages__item-text {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   font-size: 14px;
   line-height: 24px;
 }
