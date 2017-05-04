@@ -53,12 +53,18 @@
 }
 
 .comments__toogles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 14px;
   margin: 0 auto;
 }
 
 #comment-1:checked ~ .comments__wrapper label[for="comment-1"],
 #comment-2:checked ~ .comments__wrapper label[for="comment-2"],
 #comment-3:checked ~ .comments__wrapper label[for="comment-3"]{
+  box-sizing: content-box;
   background: white;
   border: 3px solid #364351;
 }

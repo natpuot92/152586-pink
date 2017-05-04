@@ -6,7 +6,6 @@
   margin-bottom: 45px;
   font-family: $font;
   overflow: auto;
-
 }
 
 .advantages__slogan {
@@ -50,6 +49,7 @@
   position: relative;
   @include phone-container;
   min-height: 753px;
+  overflow: hidden;
 }
 
 .advantages__item {
@@ -58,9 +58,6 @@
 
 .advantages__mobile-photo {
   margin: 0 auto;
-  //bottom: -33px;
-  //left: 50%;
-  //margin-left: -79px;
   width: 158px;
   height: 277px;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
@@ -95,8 +92,21 @@
   }
 
   .advantages__slogan {
+    min-height: 297px;
     @include tablet-container;
+    padding: 0;
+    padding-top: 48px;
+    font-size: 40px;
+    &::after {
+      bottom: -2px;
+      height: 10vw;
+    }
+  }
 
+  .advantages__result {
+    margin: 0;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .advantages__items {
@@ -105,19 +115,25 @@
     }
   .advantages__item {
     margin-left: auto;
-    width: 310px;
+    width: 50%;
+    text-align: left;
   }
 
   .advantages__items-container {
+    position: relative;
     min-height: 432px;
     @include tablet-container;
   }
 
   .advantages__mobile-photo {
-    left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    z-index: 2;
     width: 268px;
     height: 481px;
-    background-size: cover;
+    background: url('/img/iphone-screen-3-tablet@1x.png') no-repeat center;
+    background-size: contain;
   }
 }
 

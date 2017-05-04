@@ -1,7 +1,9 @@
 .pay-plan {
   min-height: 400px;
-  padding-top: 35px;
+  padding-top: 60px;
+  margin-bottom: 40px;
   background: #f2f2f2;
+  overflow: hidden;
 }
 
 .pay-plan__input {
@@ -19,7 +21,7 @@
 }
 
 .pay-plan__table {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   border-collapse: collapse;
 }
 
@@ -29,6 +31,28 @@
   background: #283645;
   color: white;
   text-align: center;
+}
+
+.pay-plan__title {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pay-plan__cost {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.pay-plan__plans--center {
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 }
 
 .pay-plan__item {
@@ -50,13 +74,20 @@
 }
 
 .pay-plan__toogles {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 14px;
   margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 #pay-plans-1:checked~.pay-plan__container label[for="pay-plans-1"],
 #pay-plans-2:checked~.pay-plan__container label[for="pay-plans-2"],
 #pay-plans-3:checked~.pay-plan__container label[for="pay-plans-3"]{
+  box-sizing: content-box;
   background: white;
   border: 3px solid #364351;
 }

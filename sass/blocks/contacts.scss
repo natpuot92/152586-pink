@@ -1,20 +1,37 @@
 .contacts {
-  width: 320px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  width: auto;
   background: white;
   font-family: $font;
 }
 
+.contacts__container {
+  position: relative;
+  margin-bottom: 35px;
+}
+
 .contacts__question {
+  margin-bottom: 35px;
+  text-align: center;
   font-family: $font;
   font-size: 24px;
   font-weight: lighter;
 }
 
 .contacts__title {
+  margin-bottom: 5px;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   color: #283645;
+}
+
+.contacts__tel {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contacts__tel a {
@@ -22,6 +39,11 @@
   text-decoration: none;
   font-size: 24px;
   font-weight: lighter;
+}
+
+.contacts__container-mail {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contacts__mail {
@@ -32,10 +54,29 @@
 }
 
 .contacts__addres {
+  text-align: center;
   color: #d22856;
   text-decoration: none;
   font-size: 24px;
   font-weight: lighter;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 46vw;
+  background: url('/img/bg-map-mobile@2x.jpg') no-repeat center;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    height: 10vw;
+    width: 100%;
+    display: block;
+    background: url('/img/bg-triangle-white-footer.svg') no-repeat center;
+    background-size: contain;
+  }
+
 }
 
 @media (min-width: 700px) {
