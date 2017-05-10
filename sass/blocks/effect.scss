@@ -35,9 +35,37 @@
   .effect__container {
     display: flex;
     height: 436px;
-    width: 700px;
-    margin: 0 auto;
+    width: auto;
     padding: 0 40px;
+  }
+
+  .effect__clock {
+    position: relative;
+    width: 239px;
+    height: 276px;
+    flex-shrink: 0;
+    margin-right: 10%;
+    //71px
+    background: url('/img/icon-timer.svg') no-repeat center;
+    background-size: contain;
+
+  &::after {
+    content: '24';
+    position: absolute;
+    top: 55px;
+    left: 19px;
+    display: block;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 96px;
+    font-weight: bold;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+    }
   }
 }
 
