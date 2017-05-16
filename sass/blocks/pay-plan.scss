@@ -94,39 +94,91 @@
 
 @media (min-width: 700px) {
   .pay-plan {
+    z-index: 11;
     min-height: 324px;
+    display: flex;
+    flex-direction: column;
     background: #f2f2f2;
    }
 
-  .pay-plan__table {
-    border-collapse: collapse;
-  }
-
-  .pay-plan__item {
-    width: 152px;
-    height: 45px;
-      &--tablet {
-        display: table-cell;
-        }
-    }
-
-  .pay-plan__plans {
-    width: 152px;
-    height: 79px;
-  }
-
   .pay-plan__container {
     position: static;
-    left: auto;
-    width: 700px;
+    width: auto;
     padding: 0 40px;
     margin: 0 auto;
     transform: none;
 
   }
 
+  .pay-plan__table {
+    border-collapse: collapse;
+    margin-bottom: 68px;
+  }
+
+  .pay-plan__title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .pay-plan__cost {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .pay-plan__item {
+    width: 21%;
+    height: 45px;
+    font-size: 14px;
+    text-transform: none;
+      &--tablet {
+        display: table-cell;
+        }
+    }
+
+  .pay-plan__item--on {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 42%;
+      width: 32px;
+      height: 22px;
+      background: url('../../img/icon-yes.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .pay-plan__item--off {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 42%;
+      width: 28px;
+      height: 27px;
+      background: url('../../img/icon-no.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .pay-plan__item span {
+    display: none;
+  }
+
+  .pay-plan__plans {
+    width: 152px;
+    height: 79px;
+  }
+
+
   .pay-plan__plans--none {
   display: table-cell;
+  }
+
+  .pay-plan__toogles {
+    display: none;
   }
 }
 

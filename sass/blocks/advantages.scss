@@ -12,6 +12,8 @@
   position: relative;
   min-height: 248px;
   padding-top: 38px;
+  padding-right: 18px;
+  padding-left: 18px;
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
@@ -23,7 +25,8 @@
     content: '';
     z-index: 1;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
+    left: 0;
     display: block;
     width: 100%;
     min-height: 80px;
