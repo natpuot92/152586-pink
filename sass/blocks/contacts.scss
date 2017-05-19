@@ -65,7 +65,8 @@
   position: relative;
   width: 100%;
   height: 46vw;
-  background: url('/img/bg-map-mobile@2x.jpg') no-repeat center;
+  background: url('/img/bg-map-tablet@2x.jpg') no-repeat center;
+  background-size: cover;
   &::after {
     content: '';
     position: absolute;
@@ -76,7 +77,6 @@
     background: url('/img/bg-triangle-white-footer.svg') no-repeat center;
     background-size: contain;
   }
-
 }
 
 @media (min-width: 700px) {
@@ -84,13 +84,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 700px;
+    width: auto;
     padding: 0 40px;
   }
 
   .contacts__question {
     width: 374px;
     margin: 0 auto;
+    margin-bottom: 44px;
     text-align: center;
   }
 

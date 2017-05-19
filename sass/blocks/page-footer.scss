@@ -29,10 +29,29 @@
 @media (min-width: 700px) {
   .page-footer {
     display: flex;
-    width: 700px;
+    width: auto;
     min-height: 127px;
     padding: 0 40px;
-    background: grey;
+    background: white;
+  }
+
+  .social-links {
+    display: flex;
+    max-width: 200px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .social-link {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 3px solid #e9ebec;
+  }
+
+  .social-link--tw {
+    background: url('../img/icon-twitter.svg') no-repeat center;
+    background
   }
 }
 
