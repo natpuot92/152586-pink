@@ -85,10 +85,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .page-header__iphone-container {
+    position: relative;
     min-height: 743px;
-
+    max-width: 1024px;
   }
 
   .page-header--item {
