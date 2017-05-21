@@ -182,9 +182,17 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  .pay-plan {
+    margin-bottom: 75px;
+  }
+
   .pay-plan__container {
     @include desktop-container;
+  }
+
+  .pay-plan__table {
+    width: 100%;
   }
 }
 

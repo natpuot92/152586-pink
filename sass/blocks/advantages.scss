@@ -152,6 +152,10 @@
 }
 
 @media (min-width: 1024px) {
+  .advantages {
+    margin-bottom: 0;
+  }
+
   .advantages__slogan {
     padding-bottom: 12vw;
     color: $text-color;
