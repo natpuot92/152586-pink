@@ -99,7 +99,7 @@
 
 @media (min-width: 1024px) {
   .comments {
-
+    max-width: 1040px;
     &::after {
       bottom: -2px;
       min-height: 10vw;

@@ -1,7 +1,7 @@
 .news {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+
   font-family: $font;
   font-size: 14px;
   line-height: 24px;
@@ -9,7 +9,77 @@
 }
 
 .news__title {
+  margin-bottom: 56px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 14px;
   line-height: 30px;
+}
+
+.news-item__foto-link--panorama {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 45.46vw;
+  background: url(../img/panorama-mobile@2x.jpg) no-repeat top;
+  background-size: contain;
+  &::after {
+    content:'ПАНОРАМА ДНЯ';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    padding: 9px 20px 9px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+    background: rgb(210, 40, 86);
+  }
+}
+  .news-item {
+    padding: 0 20px;
+  }
+
+.news-item__comment-desc,
+.news-item__comment-name,
+.news-item__comment-like {
+  padding-left: 17px;
+  line-height: 24px;
+}
+
+.news-item__comment-like {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.news-item__comment-desc {
+  margin-bottom: 11px;
+}
+
+.news-item__comment-like-heart {
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
+  font-size: 0;
+  background: url(/img/icon-heart.svg) no-repeat center;
+}
+
+.news-item__comment {
+  padding-bottom: 22px;
+}
+
+.news-item__comment-desc p {
+  margin: 0;
+}
+
+.news__footer {
+  margin-top: 39px;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 @media (min-width: 700px) {
